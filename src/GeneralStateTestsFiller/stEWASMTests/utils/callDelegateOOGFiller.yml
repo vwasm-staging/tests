@@ -19,27 +19,36 @@ callDelegateOOG:
       code: |
         (module
           (import "ethereum" "callDelegate" (func $callDelegate (param i64 i32 i32 i32) (result i32)))
-          ;;(import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
-          (import "debug"    "printMemHex"  (func $printMemHex  (param i32 i32)))
+          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
-          ;; 00:20 -> address
-          ;; 20:22 -> data
-          ;; 22:54 -> resultOffset
-          ;; 54:86 -> vmResult (1 or 0)
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\c1")
           (data (i32.const 20) "\12\34")
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
+            (local $addressOffset i32)
+            (local $dataOffset i32)
+            (local $dataLength i32)
+            (local $resultOffset i32)
+            (local $keyOffset i32)
+            (local $gas i64)
+
+            (set_local $gas (i64.const 1000))         ;; 5445 is the required gas
+            (set_local $addressOffset (i32.const 0))
+            (set_local $dataOffset (i32.const 20))
+            (set_local $dataLength (i32.const 2))
+            (set_local $resultOffset (i32.const 54))
+            (set_local $keyOffset (i32.const 86))
+          
             (i32.store
-              (i32.const 54)
+              (get_local $resultOffset)
               (call $callDelegate
-                (i64.const 1000)    ;; 5445 is the requried gas
-                (i32.const 0)       ;; addrOffset
-                (i32.const 20)      ;; dataOffset
-                (i32.const 2)))     ;; dataLength
-            (call $printMemHex (i32.const 54) (i32.const 32)) ;; cresult. 1 or 0
-            ))
+                (get_local $gas)
+                (get_local $addressOffset)   
+                (get_local $dataOffset)      
+                (get_local $dataLength)))    
+            ;; The result should be 1, because callDelegate runs out of gas
+            (call $storageStore (get_local $keyOffset) (get_local $resultOffset))))
                 
       nonce: ''
       storage: {}
@@ -50,7 +59,6 @@ callDelegateOOG:
           (import "ethereum" "getAddress" (func $getAddress (param i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (import "ethereum" "return"       (func $return (param i32 i32)))
-          (import "debug"    "printMemHex" (func $printMemHex (param i32 i32)))
           (memory 1)
           (data (i32.const 64) "\31\32")
           (export "main" (func $main))
@@ -79,7 +87,7 @@ callDelegateOOG:
         b100000000000000000000000000000000000001:
           balance: '100000000000'
           storage: {
-
+            0: '0x01'  # Runs Out Of Gas, VM result should be 1
             }
         c100000000000000000000000000000000000001:
           balance: '100000000000'
