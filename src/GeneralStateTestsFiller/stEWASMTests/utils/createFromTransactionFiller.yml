@@ -33,7 +33,7 @@ createFromTransaction:
           (export "main" (func $main))
           (func $main
             ;; Store some data to return
-            (i32.store (i32.const 0) (i32.const 1))
+            (i32.store8 (i32.const 0) (i32.const 1))
             ;; Return it
             (call $return 
               ;; dataOffset i32ptr the memory offset of the output data (bytes)
