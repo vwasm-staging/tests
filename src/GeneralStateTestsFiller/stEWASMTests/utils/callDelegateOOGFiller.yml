@@ -20,7 +20,6 @@ callDelegateOOG:
         (module
           (import "ethereum" "callDelegate" (func $callDelegate (param i64 i32 i32 i32) (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
-          (import "debug"    "printMemHex"  (func $printMemHex  (param i32 i32)))
           (memory 1)
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\c1")
           (data (i32.const 20) "\12\34")
@@ -60,7 +59,6 @@ callDelegateOOG:
           (import "ethereum" "getAddress" (func $getAddress (param i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (import "ethereum" "return"       (func $return (param i32 i32)))
-          (import "debug"    "printMemHex" (func $printMemHex (param i32 i32)))
           (memory 1)
           (data (i32.const 64) "\31\32")
           (export "main" (func $main))
