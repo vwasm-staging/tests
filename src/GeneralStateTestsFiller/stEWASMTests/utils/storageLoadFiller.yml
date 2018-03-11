@@ -32,26 +32,27 @@ storageLoad:
       storage: {
         0: "0xdeadbeef"
       }
-  expect:
-    - indexes:
-        data: -1
-        gas: -1
-        value: -1
-      network:
-        - ALL
-      result:
-        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: "99999957728"
-        deadbeef00000000000000000000000000000000:
-          storage: {
-            1: "0xdeadbeef"
-          }
+  # expect:
+  #   - indexes:
+  #       data: -1
+  #       gas: -1
+  #       value: -1
+  #     network:
+  #       - ALL
+  #     result:
+  #       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+  #         balance: "99999958528"
+  #       deadbeef00000000000000000000000000000000:
+  #         storage: {
+  #           0: "0xdeadbeef",            
+  #           1: "0xdeadbeef"
+  #         }
   transaction:
     data:
     - '0xffff'
     gasLimit:
     - '0x5000001'
-    gasPrice: '0x02'
+    gasPrice: '0x01'
     nonce: '0x00'
     secretKey: 45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8
     to: 'deadbeef00000000000000000000000000000000'
