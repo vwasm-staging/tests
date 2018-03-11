@@ -23,21 +23,19 @@ returnPredefinedData:
       result:
         # newly-created contract
         6295ee1b4f6dd65047762f924ecd367c17eabf8f:
-          code: '0x01'
+          code: '0x00000000000000000000000000000000efbeadde'
   transaction:
     data: 
     - |
         (module
+          ;; code for a txn which creates an account with some code that is predefined in a data segment
           (import "ethereum" "return" (func $return (param i32 i32)))
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
           (export "main" (func $main))
           (func $main
-            ;; Return it
             (call $return 
-              ;; dataOffset i32ptr the memory offset of the output data (bytes)
               (i32.const 0)
-              ;; length i32 the length of the output data
               (i32.const 20)
             )
           )
