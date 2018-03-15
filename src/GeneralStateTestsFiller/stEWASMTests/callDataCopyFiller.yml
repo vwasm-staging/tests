@@ -46,8 +46,8 @@ callDataCopy:
       network:
         - ALL
       result:
-        # initialBalance  (VERYLOW + COPY*((length+31)/32))    SSTORE  txCost  dataCost
-        # 100000000000   - ( 3 + 3*((2+31)/32) )           - 20000 - 21000  - 136 = 99999958858
+        # initialBalance   ( VERYLOW + COPY*ceil(len/32)         SSTORE  txCost   (datalen*63)
+        # 100000000000   - ( 3       + 3   *ceil(2  /32)       - 20000 - 21000  - (2      *63) = 99999958858
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           balance: '99999958858'
         abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd:
