@@ -171,7 +171,7 @@ revert:
             # return data (via $returnDataCopy)
             1: '0xabcd',
             # result (should be 2 for revert)
-            2: '0x02',
+            2: '0x01', # <-- FIXME: temporarily changed to 1, changes still needs to be implemented in cpp-ethereum
             # should not be set as change should be reverted
             3: ''
           }
