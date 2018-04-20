@@ -31,23 +31,23 @@ getBlockGasLimit:
         )
       nonce: ''
       storage: {}
-  # expect:
-  #   - indexes:
-  #       data: -1
-  #       gas: -1
-  #       value: -1
-  #     network:
-  #       - ALL
-  #     result:
-  #       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-  #         balance: "99999957728"
-  #       deadbeef00000000000000000000000000000000:
-  #         storage: {
-  #           0: "0x5000001"
-  #         }
+  expect:
+    - indexes:
+        data: !!int -1
+        gas: !!int -1
+        value: !!int -1
+      network:
+        - ALL
+      result:
+        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+          balance: "99999958998"
+        deadbeef00000000000000000000000000000000:
+          storage: {
+            0: "0x5500000"
+          }
   transaction:
     data:
-    - '0xffff'
+    - '0x'
     gasLimit:
     - '0x5000001'
     gasPrice: '0x01'

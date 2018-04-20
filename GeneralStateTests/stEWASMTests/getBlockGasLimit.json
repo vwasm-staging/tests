@@ -2,10 +2,10 @@
     "getBlockGasLimit" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "cpp-1.3.0+commit.76e2e296.Darwin.appleclang",
+            "filledwith" : "cpp-1.3.0+commit.95f94329.Darwin.appleclang",
             "lllcversion" : "Version: 0.4.20-develop.2018.1.2+commit.efc198d5.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockGasLimitFiller.yml",
-            "sourceHash" : "5ac379a4b9cc0d6e545ab3fd1506c7ad12d00b9cf961d1973fc2d011ba154ebd"
+            "sourceHash" : "4bc9ac3b5eb620aed43a85331e2971dea4dd1b7c661b6de8ad4cc3af40dd835f"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xb968aa3c8e518d89a5e4d36413c63fe822f8e72db8332572f6d521fdf976278a",
+                    "hash" : "0xae46eb978cdba39998112fcee8fed23159ae78484134a2d675b3d638f8d01c04",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -46,7 +46,7 @@
         },
         "transaction" : {
             "data" : [
-                "0xffff"
+                "0x"
             ],
             "gasLimit" : [
                 "0x5000001"

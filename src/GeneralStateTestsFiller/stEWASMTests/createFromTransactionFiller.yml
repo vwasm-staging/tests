@@ -23,10 +23,12 @@ createFromTransaction:
       network:
         - ALL
       result:
-        # # initialBalance - createGas - dataCost
-        # # 100000000000   - 53000     - 6752
-        # a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-        #   balance: '99999940312'
+        # initialBalance - createGas - dataCost - createData
+        # 100000000000   - 53000     - 6752     - 1600      = 99999938712
+        # createData: new_contract_bytes * create_data_cost
+        #                    8           * 200              = 1600
+        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+          balance: '99999938712'
         # newly-created contract
         6295ee1b4f6dd65047762f924ecd367c17eabf8f:
           code: '0x0061736d01000000'
@@ -45,6 +47,9 @@ createFromTransaction:
             (i32.const 8))
         )
       )
+# bytecode:
+# 0x0061736d0100000001090260027f7f0060000002130108657468657265756d0672657475726e0000030201010503010064071102066d656d6f72790200046d61696e00010a0a0108004100410810000b0b0e010041000b080061736d010000000016046e616d65010f02000672657475726e01046d61696e
+
 # bytecode (length=120):
 # zero-bytes: 23 * 4  = 92
 # non-zero:   97 * 68 = 6596

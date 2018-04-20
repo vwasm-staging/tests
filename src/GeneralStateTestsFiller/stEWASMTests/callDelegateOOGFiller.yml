@@ -33,7 +33,7 @@ callDelegateOOG:
             (local $keyOffset i32)
             (local $gas i64)
 
-            (set_local $gas (i64.const 1000))         ;; 5445 is the required gas
+            (set_local $gas (i64.const 20318))         ;; 20319 is the required gas
             (set_local $addressOffset (i32.const 0))
             (set_local $dataOffset (i32.const 20))
             (set_local $dataLength (i32.const 2))
@@ -71,30 +71,32 @@ callDelegateOOG:
 
       nonce: ''
       storage: {}
-  # expect:
-  #   - indexes:
-  #       data: -1
-  #       gas: -1
-  #       value: -1
-  #     network:
-  #       - ALL
-  #     result:
-  #      # initialBalance CALLDELEGATE         gasSent          txCost
-  #      # 100000000000   - 700        - (1000 - (1000 / 64)) - 21000 = 99999977315
-  #      a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-  #        balance: '99999977315'     
-  #         code: ''
-  #         nonce: '1'
-  #         storage: {}
-  #       b100000000000000000000000000000000000001:
-  #         balance: '100000000000'
-  #         storage: {
-  #          0: '0x01'  # Runs Out Of Gas, VM result should be 1
-  #           }
-  #       c100000000000000000000000000000000000001:
-  #         balance: '100000000000'
-  #         storage: {
-  #           }
+  expect:
+    - indexes:
+        data: !!int -1
+        gas: !!int -1
+        value: !!int -1
+      network:
+        - ALL
+      result:
+        # gas sent to contract 2: 20318
+        # gas is calculated using: gas - (gas/64) = 20318 - (20318/64) = 20001
+        # initialBalance CALLDELEGATE (Contract 2) SSTORE txCost
+        # 100000000000   - 700      - 20001      - 20000 - 21000 = 99999938299
+        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+          balance: '99999938299'     
+          code: ''
+          nonce: '1'
+          storage: {}
+        b100000000000000000000000000000000000001:
+          balance: '100000000000'
+          storage: {
+           0: '0x01'  # Runs Out Of Gas, VM result should be 1
+            }
+        c100000000000000000000000000000000000001:
+          balance: '100000000000'
+          storage: {
+            }
   transaction:
     data:
     - ''
