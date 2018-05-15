@@ -59,7 +59,7 @@ revert:
       balance: '100000000000'
       code: |
         (module
-          (import "ethereum" "call" (func $call (param i64 i32 i32 i32 i32 i32 i32) (result i32)))
+          (import "ethereum" "call" (func $call (param i64 i32 i32 i32 i32) (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (import "ethereum" "getReturnDataSize" (func $getReturnDataSize (result i32)))
           (import "ethereum" "returnDataCopy" (func $returnDataCopy (param i32 i32 i32)))
@@ -109,11 +109,6 @@ revert:
                 (get_local $memValue)
                 ;; dataLength i32 the length of data
                 (i32.const 1)
-                ;; These last two args are unused and will be removed.
-                ;; UNUSED: resultOffset i32ptr the memory offset to store the result data at (bytes)
-                (i32.const 0)
-                ;; UNUSED: resultLength i32 the maximal length of result data
-                (i32.const 0)
               )
             )
 
