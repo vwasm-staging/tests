@@ -19,7 +19,6 @@ callStatic:
       code: |
         (module
         (import "ethereum" "callStatic" (func $callStatic (param i64 i32 i32 i32) (result i32)))
-        (import "debug"    "printMemHex"  (func $printMemHex (param i32 i32)))
         (memory 1)
         ;; 0-20: Address
         ;; 
@@ -35,7 +34,6 @@ callStatic:
               (i32.const 0)
               (i32.const 20)
               (i32.const 2)))
-          (call $printMemHex (i32.const 54) (i32.const 32))
           ))
       nonce: ''
       storage: {}
@@ -45,14 +43,12 @@ callStatic:
         (module
           (import "ethereum" "getAddress" (func $getAddress (param i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
-          (import "debug"    "printMemHex" (func $printMemHex (param i32 i32)))
           (memory 1)
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
             (call $getAddress (i32.const 32))
-            (call $storageStore (i32.const 98) (i32.const 32))
-            (call $printMemHex (i32.const 32) (i32.const 32))))
+            (call $storageStore (i32.const 98) (i32.const 32))))
       nonce: ''
       storage: {}
   expect:
