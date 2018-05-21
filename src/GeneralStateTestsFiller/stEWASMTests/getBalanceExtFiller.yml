@@ -24,7 +24,6 @@ getBalanceExt:
         (module
           (import  "ethereum" "getBalance"  (func $getBalance (param i32 i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
-          (import "debug" "printMemHex" (func $printMemHex (param i32 i32)))
           (memory 1 )
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
           (export "memory" (memory 0))

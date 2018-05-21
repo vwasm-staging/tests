@@ -18,14 +18,12 @@ getBlockGasLimit:
         (module
           (import "ethereum" "getBlockGasLimit"  (func $getBlockGasLimit (result i64)))
           (import "ethereum" "storageStore"  (func $storageStore (param i32 i32)))
-          (import "debug"    "printMemHex" (func $printMemHex (param i32 i32)))
           (memory 1 )
           (export "memory" (memory 0))
           (export "main" (func $main))
 
           (func $main
             (i64.store (i32.const 0) (call $getBlockGasLimit))
-            (call $printMemHex (i32.const 0) (i32.const 64))
             (call $storageStore (i32.const 100) (i32.const 0))
           )
         )
