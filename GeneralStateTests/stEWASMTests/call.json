@@ -2,10 +2,10 @@
     "call" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "cpp-1.3.0+commit.b387b571.Linux.g++",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.4.0.dev0-7+commit.b3285e37.dirty",
+            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callFiller.yml",
-            "sourceHash" : "3983e918dfb6ecdec4267f304b8de8b3f7ac5af6e29a8e27dd9d7a9104ca89d9"
+            "sourceHash" : "8689cfe3203ca28324f1f0d97d8f4b568989d759eda5e0a11670428b73a07a2c"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xbf86e83e24b4197608ee0658e74827bb3f403908320b56239e923ce3e0d2f262",
+                    "hash" : "0x7b5c939315dfba3ce59528ec591a0fcc999f1f1ea3ebdfe3d362677db8553e4a",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
