@@ -32,6 +32,7 @@ returnPredefinedData:
           (import "ethereum" "return" (func $return (param i32 i32)))
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (export "memory" (memory 0))
           (export "main" (func $main))
           (func $main
             (call $return 
