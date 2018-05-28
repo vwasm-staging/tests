@@ -1,4 +1,4 @@
-## eWasm Tests
+## ewasm Tests
 
 Current [eWasm test cases][1] are based on the main [Ethereum test cases][2]
 which are used by all clients. This allows us to run eWasm tests using
@@ -81,7 +81,7 @@ Example of wast code:
   )
 ```
 
-Code is wrapped in a `module`
+`testeth` detects source starting with `(module` as wasm and will automatically compile it.
 
 ```lisp
 (module
@@ -196,8 +196,8 @@ Transaction contains the following fields:
 - nonce
 - secretKey - using
   `45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8` which is
-  the secret key for account
-  `45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8`
+  the private key for account
+  `a94f5374fce5edbc8e2a8697c15331677e6ebf0b`
 - to - called account, if the account is an Internally Owned Account it will
   execute the wasm code.
 - value - value sent to the account.
@@ -259,11 +259,12 @@ git submodule update --init
 ```
 
 - update hera to the latest version (or the specific hera version you want to
-  test)
+  test) and update hera submodules.
   
 ```
 cd hera
 git pull origin master
+git submodule update --init
 ```
 
 - build cpp-ethereum with hera, create a `build` directory inside
