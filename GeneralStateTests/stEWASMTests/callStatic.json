@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.4.0.dev0-7+commit.b3285e37.dirty",
             "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callStaticFiller.yml",
-            "sourceHash" : "a516bd7f3d0b4ab3cd0e941300a42e6ce01f48f30acab3bdaa487849cec47f1b"
+            "sourceHash" : "1bc74e09806d064b5ed08b43eba45de62b5c9489fce03c7d0c186832e2e1e492"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
