@@ -65,7 +65,8 @@ Each account contains he following fields:
 
 #### code
 
-Example of wast code: 
+Here is an example of wast code calling ewasm methods, you can learn more about 
+the structure of WebAssembly modules in the [WebAssembly Specification][16]: 
 
 ```lisp
 (module
@@ -231,6 +232,11 @@ Testeth also needs `lllc` (LLL Compiler) in order to fill tests cases (even if
 we are not using LLL code in our tests), `lllc` compiler is distributed along
 with [solidity][13], you may need to compile solidity/lllc and add it to your `$PATH`.
 
+When you create a new test or change an existing one, it is important to add the "filled" 
+json file to your commit.
+
+You can find more information about creating and filling tests in the [testeth documentation][17].
+
 ### building cpp-ethereum with hera
 
 For building cpp ethereum you can use the commit specified in the [hera circleci file][12]
@@ -255,25 +261,40 @@ git reset --hard b387b5713738da12444af8d3a0f6390f2c87b76e
 - update submodules
 
 ```
-git submodule update --init
+git submodule update --init --recursive
 ```
 
-- update hera to the latest version (or the specific hera version you want to
-  test) and update hera submodules.
+- If you want to  test a specific hera version, you have to go to the hera
+  subdirectory, checkout a specific commit or branch and update submodules.
   
 ```
 cd hera
-git pull origin master
+# update hera to a specific version
 git submodule update --init
 ```
 
-- build cpp-ethereum with hera, create a `build` directory inside
+- build hera as a shared library, you can add the `-DHERA_DEBUGGING=ON` flag if
+  you want to use the debug methods in your wast code:
+
+```
+cd hera
+cmake -DHERA_DEBUGGING=ON -DBUILD_SHARED_LIBS=ON ..
+make -j4
+```
+
+Library `libhera.so` is created in the `src/` subdirectory.
+
+Building hera as a shared library allows us to load the library dynamically when
+running testeth, this way when you do any change in hera or get a new hera
+version you only need to rebuild the hera library again instead of cpp-ethereum.
+
+- build cpp-ethereum: create a `build` directory inside
 `cpp-ethereum/` and run cmake and make:
 
 ```
 mkdir build
 cd build
-cmake -DHERA=ON -DHERA_DEBUGGING=ON .. && make -j4
+cmake .. && make -j4
 ```
 
 ### Filling the tests
@@ -284,7 +305,7 @@ When cpp-ethereum is built, it has testeth in `cpp-ethereum/build/test`
 You can fill the test using the following command:
 
 ```
-ETHEREUM_TEST_PATH=/ewasm/tests ./testeth -t GeneralStateTests/stEWASMTests -- --filltests --vm hera --singlenet "Byzantium" --singletest mytest
+ETHEREUM_TEST_PATH=/ewasm/tests ./testeth -t GeneralStateTests/stEWASMTests -- --filltests --vm /path/to/hera/src/libhera.so --singlenet "Byzantium" --singletest mytest
 ```
 
 - `ETHEREUM_TEST_PATH` defines an environment variable indicating the location of
@@ -294,7 +315,8 @@ and fill our tests
 - `-t GeneralStateTests/stEWASMTests` - Indicates the directory where our test
   files are
   
-- `--vm hera` - Indicates we want to run the hera VM instead of the EVM
+- `--vm /path/to/hera/src/libhera.so` - Indicates we want to run the hera VM
+  instead of the EVM, we indicate where to find hera as a library.
 - `--singlenet "Byzantium"` - Indicates we want to run Byzantium tests, ewasm is
   Byzantium only
 - `--singletest mytest` - Where `mytest` is the name of the test you want to
@@ -316,3 +338,5 @@ and fill our tests
 [13]: https://github.com/ethereum/solidity
 [14]: https://github.com/ewasm/hera#debugging-module
 [15]: https://github.com/ewasm/tests/tree/ewasm-readme/src/
+[16]: https://webassembly.github.io/spec/core/text/modules.html
+[17]: https://github.com/ethereum/testeth/blob/64c78ffbcf082d116db10906b8f1e9c6204084c1/doc/generating_tests.rst
