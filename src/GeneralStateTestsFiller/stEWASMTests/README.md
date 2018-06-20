@@ -1,19 +1,19 @@
 ## ewasm Tests
 
-Current [eWasm test cases][1] are based on the main [Ethereum test cases][2]
-which are used by all clients. This allows us to run eWasm tests using
+Current [ewasm test cases][1] are based on the main [Ethereum test cases][2]
+which are used by all clients. This allows us to run ewasm tests using
 cpp-ethereum/testeth.
 
 In the main directory of the ewasm tests repository, we can see different kind
 of tests, for example: ABITests, BasicTests, BlockchainTests, GeneralStateTests,
-VMTests, etc. For testing eWasm we are using
+VMTests, etc. For testing ewasm we are using
 GeneralStateTests. The [GeneralStateTests][3] contains subdirectories grouping
 together tests cases specific for different scenarios.
 
 ## Test files
 
 In [GeneralStateTests][3] you can find the test cases specific for
-eWasm: [stEWASMTests][4], this directory contains the "filled" json files, those
+ewasm: [stEWASMTests][4], this directory contains the "filled" json files, those
 files are read by testeth, testeth reads the *pre-state*, then reads the
 *transaction* and executes it, at the end testeth compares if the *postState hash*
 is the same as the expected.
@@ -93,7 +93,7 @@ directory)
 ## Fillers
 
 Filler files can be written in json or in yaml format, all tests specific for
-eWasm are written in yaml.
+ewasm are written in yaml.
 
 The yaml file name should be the same as the test name + `Filler`
 ([example][9]), this is validated by testeth.
@@ -120,11 +120,10 @@ env:
 
 ### 2. pre - state before the transaction (pre-state)
 
-Here we define accounts and the initial values for each one, for almost all test
+Here we define accounts and the initial values for each one. For almost all test
 cases we are using the account `a94f5374fce5edbc8e2a8697c15331677e6ebf0b` to
 execute the transaction, but any account can be used to execute the transaction
-as long you send the correct secret key, the [secret key][10] is used in the
-transaction definition.
+as long as the corresponding [secret key][10] is used in the transaction definition.
 
 We can add more accounts that can be called by the transaction.
 
