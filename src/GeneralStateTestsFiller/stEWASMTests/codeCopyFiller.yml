@@ -16,9 +16,9 @@ codeCopy:
       balance: '100000000000'
       code: |
         (module
-          (import  "ethereum" "codeCopy"  (func $codeCopy (param i32 i32 i32)))
-          (import  "ethereum" "storageStore"  (func $storageStore (param i32 i32)))
-          (memory 1 )
+          (import "ethereum" "codeCopy" (func $codeCopy (param i32 i32 i32)))
+          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          (memory 1)
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -28,9 +28,7 @@ codeCopy:
           )
         )
       nonce: ''
-      storage: {
-        0: "0x00"
-      }
+      storage: {}
   expect:
     - indexes:
         data: !!int -1
@@ -50,6 +48,9 @@ codeCopy:
           balance: "99999958858"
         deadbeef00000000000000000000000000000000:
           storage: {
+            # This storage slot should contain the first ten bytes of the code contained
+            # at this address. Note that it's in little-endian order, so it's the reverse
+            # of the code contained in the filled test file.
             0: "0x0f01000000016d736100"
           }
   transaction:

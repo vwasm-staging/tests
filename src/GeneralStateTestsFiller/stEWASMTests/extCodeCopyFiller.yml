@@ -18,9 +18,9 @@ extCodeCopy:
       storage: {}
       code: |
         (module
-          (import  "ethereum" "codeCopy"  (func $codeCopy (param i32 i32 i32)))
-          (import  "ethereum" "storageStore"  (func $storageStore (param i32 i32)))
-          (memory 1 )
+          (import "ethereum" "codeCopy" (func $codeCopy (param i32 i32 i32)))
+          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          (memory 1)
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -33,10 +33,10 @@ extCodeCopy:
       balance: '100000000000'
       code: |
         (module
-          (import  "ethereum" "externalCodeCopy"  (func $externalCodeCopy (param i32 i32 i32 i32)))
-          (import  "ethereum" "storageStore"  (func $storageStore (param i32 i32)))
-          (memory 1 )
-          (data (i32.const 0)  "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (import "ethereum" "externalCodeCopy" (func $externalCodeCopy (param i32 i32 i32 i32)))
+          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          (memory 1)
+          (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
           (export "memory" (memory 0))
           (export "main" (func $main))
 
