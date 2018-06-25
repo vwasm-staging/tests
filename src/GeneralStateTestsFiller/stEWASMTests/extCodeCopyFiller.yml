@@ -18,15 +18,13 @@ extCodeCopy:
       storage: {}
       code: |
         (module
-          (import "ethereum" "codeCopy" (func $codeCopy (param i32 i32 i32)))
-          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
           (export "memory" (memory 0))
           (export "main" (func $main))
 
           (func $main
-            (call $codeCopy (i32.const 0) (i32.const 0) (i32.const 20))
-            (call $storageStore (i32.const 100) (i32.const 0))
+            ;; this code is never actually called
+            (unreachable)
           )
         )
     deadbeef00000000000000000000000000000000:
@@ -41,7 +39,16 @@ extCodeCopy:
           (export "main" (func $main))
 
           (func $main
-            (call $externalCodeCopy (i32.const 0) (i32.const 200) (i32.const 0) (i32.const 10))
+            (call $externalCodeCopy
+              ;; addressOffset: the memory offset to load the address from
+              (i32.const 0)
+              ;; resultOffset: the memory offset to load the result into
+              (i32.const 200)
+              ;; codeOffset the offset within the code
+              (i32.const 0)
+              ;; length the length of code to copy
+              (i32.const 10)
+            )
             (call $storageStore (i32.const 100) (i32.const 200))
           )
         )
@@ -60,10 +67,10 @@ extCodeCopy:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           balance: "99999958297"
         deadbeef00000000000000000000000000000000:
-          # 0x0061736d01000000010f backwards
+          # 0x0061736d010000000104 backwards
           storage: {
-            0: '0x0f01000000016d736100'
-            }
+            0: '0x0401000000016d736100'
+          }
   transaction:
     data:
     - ''
