@@ -2,7 +2,7 @@
     "codeCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0.dev1-45+commit.dacd74b4",
+            "filledwith" : "testeth 1.4.0.dev0-68+commit.fd97ef4b",
             "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/codeCopyFiller.yml",
             "sourceHash" : "c2c39271bbce78de911edac62f42bf1981dc37a7e897a8564e4c072074482a2d"
