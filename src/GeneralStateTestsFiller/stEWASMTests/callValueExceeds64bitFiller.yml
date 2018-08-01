@@ -1,5 +1,5 @@
-# Test for CALL with no data and no value
-callNoDataNoValue:
+# Test for CALL with value exceeding 64 bit value
+callValueExceeds64bit:
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: '0x020000'
@@ -9,12 +9,13 @@ callNoDataNoValue:
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
   pre:
     a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-      balance: '100000000000'
+      balance: 100000000000
       code: ''
       nonce: '0x4'
       storage: {}
     deadbeef00000000000000000000000000000001:
-      balance: '100000000000'
+      # This account receives the CALL value
+      balance: 0
       nonce: ''
       storage: {}
       code: |
@@ -79,13 +80,15 @@ callNoDataNoValue:
           )
         )
     deadbeef00000000000000000000000000000000:
-      balance: '100000000000'
+      # This account spends its entire balance on the call
+      balance: 0x10000000000000000
       nonce: ''
       storage: {}
       code: |
         (module
           (import "ethereum" "call" (func $call (param i64 i32 i32 i32 i32) (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          ;;(import "debug" "printMemHex" (func $printMemHex (param i32 i32)))
 
           (memory 1)
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
@@ -97,7 +100,8 @@ callNoDataNoValue:
             ;; locals
             (local $memStart i32)
             (local $ptrStorageKey1 i32)
-            (local $ptrValue i32)
+            (local $ptrValueLow i32)
+            (local $ptrValueHigh i32)
             (local $ptrData i32)
             (local $ptrResult i32)
 
@@ -106,14 +110,26 @@ callNoDataNoValue:
 
             ;; init pointers
             (set_local $ptrStorageKey1 (get_local $memStart))
-            (set_local $ptrValue (i32.add (get_local $memStart) (i32.const 32)))
+            ;; lower-order bytes come first in little-endian
+            (set_local $ptrValueLow (i32.add (get_local $memStart) (i32.const 32)))
+            (set_local $ptrValueHigh (i32.add (get_local $memStart) (i32.const 40)))
             (set_local $ptrData (i32.add (get_local $memStart) (i32.const 64)))
             (set_local $ptrResult (i32.add (get_local $memStart) (i32.const 96)))
 
             ;; init mem
             (i32.store (get_local $ptrStorageKey1) (i32.const 1))
-            (i32.store (get_local $ptrValue) (i32.const 0))
+
+            ;; max 64-bit (8 byte) value is 0xffffffffffffffff
+            ;; to store a value greater than this (0x10000000000000000), we need
+            ;; two i64.store operations, one operating on the lower-order 8
+            ;; bytes, the second operating on the higher-order 8 bytes. Store a
+            ;; value one greater than the max 64 bit value.
+            (i64.store (get_local $ptrValueLow) (i64.const 0))
+            (i64.store (get_local $ptrValueHigh) (i64.const 1))
             (i32.store (get_local $ptrData) (i32.const 0))
+
+            ;; debug
+            ;;(call $printMemHex (get_local $ptrValueLow) (i32.const 32))
 
             ;; call CALL with data and save result
             (i32.store
@@ -124,7 +140,7 @@ callNoDataNoValue:
                 ;; address offset (stored in data section above)
                 (i32.const 0)
                 ;; value offset
-                (get_local $ptrValue)
+                (get_local $ptrValueLow)
                 ;; data offset
                 (get_local $ptrData)
                 ;; data length
@@ -148,20 +164,15 @@ callNoDataNoValue:
         - ALL
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99999963295'
+          balance: 99999956595
         deadbeef00000000000000000000000000000000:
+          balance: 0
           storage: {
-            # Expect success from CALL
-            1: "0"
           }
         deadbeef00000000000000000000000000000001:
           storage: {
-            # Length of received data
-            10: "0",
-            # Received data
-            11: ""
           }
-          balance: "100000000000"
+          balance: 0x10000000000000000
   transaction:
     data:
     - '0x'
