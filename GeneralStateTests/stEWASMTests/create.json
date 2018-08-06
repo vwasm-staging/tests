@@ -2,8 +2,8 @@
     "create" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0.dev0-56+commit.465db8e4.dirty",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.4.0rc0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFiller.yml",
             "sourceHash" : "9e8c5250dacf3d882cfd063a4e9841f9ba0f6b58e86a207ff24ec48a7dd32588"
         },
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x9e647d91474715256c9326844a1aa740f643ecae64363babe895e08f0abc2ed6",
+                    "hash" : "0xa875a35ea773a8e9e1c37e1ec102e91670b5c28502b1cff9589bad670048d283",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,7 +38,7 @@
             },
             "0xdeadbeef00000000000000000000000000000000" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d01000000010c0260047f7f7f7f017f60000002130108657468657265756d066372656174650000030201010503010001071102066d656d6f72790200046d61696e00010a130111004120410041104100410010003602000b0016046e616d65010f02000663726561746501046d61696e",
+                "code" : "0x0061736d01000000010c0260047f7f7f7f017f60000002130108657468657265756d066372656174650000030201010503010001071102066d656d6f72790200046d61696e00010a130111004120410041104100410010003602000b",
                 "nonce" : "0x00",
                 "storage" : {
                 }

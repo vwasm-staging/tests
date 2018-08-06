@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.4.0rc0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callStaticVeryLongFiller.yml",
             "sourceHash" : "f979b545666d4a24163f4a5cf4f686fe80c93c588c0400e46777ae4ac51c99a8"
         },

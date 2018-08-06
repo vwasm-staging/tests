@@ -2,8 +2,8 @@
     "extCodeCopyPartiallyOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev0+commit.a3a011c4",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.4.0rc0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/extCodeCopyPartiallyOOBFiller.yml",
             "sourceHash" : "9e778b75d34975260ce98f7766f149f03a53b4a7c92cde4dd6a5bc1da1da5d67"
         },

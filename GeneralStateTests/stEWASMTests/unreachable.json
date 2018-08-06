@@ -2,8 +2,8 @@
     "unreachable" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0.dev1-45+commit.dacd74b4",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.4.0rc0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/unreachableFiller.yml",
             "sourceHash" : "6905bed8f6997f766e615494f5c07ce14b2a85d4c543edcfc7c58921d89f57ad"
         },
@@ -39,7 +39,7 @@
         },
         "transaction" : {
             "data" : [
-                "0x0061736d01000000010401600000030201000503010001071102066d656d6f72790200046d61696e00000a05010300000b000e046e616d6501070100046d61696e"
+                "0x0061736d01000000010401600000030201000503010001071102066d656d6f72790200046d61696e00000a05010300000b"
             ],
             "gasLimit" : [
                 "0x6acfc0"
