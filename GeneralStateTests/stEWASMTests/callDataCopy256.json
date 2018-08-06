@@ -2,8 +2,8 @@
     "callDataCopy256" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "cpp-1.3.0+commit.883607f8.Darwin.appleclang",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.2+commit.efc198d5.Darwin.appleclang",
+            "filledwith" : "testeth 1.4.0rc0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataCopy256Filler.yml",
             "sourceHash" : "c2fc782e03faa19a9d287fa663bf2b8c712e974c4e410e023dacc82ed36f07b3"
         },
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x61dcf242c4ce9a8abf2ebf93d0d7e142c4f4b174f9d638b5558cd66bfecc13b1",
+                    "hash" : "0x9ec3bb8b9c38629a35caad123c46d7ed8083a9fa7fb4de7f746032c778d9898f",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,7 +38,7 @@
             },
             "0xabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d01000000010f0360037f7f7f0060027f7f0060000002310208657468657265756d0c63616c6c44617461436f7079000008657468657265756d0c73746f7261676553746f72650001030201020503010001071102046d61696e0002066d656d6f727902000a1201100041204100412010004100412010010b002a046e616d65012303000c63616c6c44617461436f7079010c73746f7261676553746f726502046d61696e",
+                "code" : "0x0061736d01000000010f0360037f7f7f0060027f7f0060000002310208657468657265756d0c63616c6c44617461436f7079000008657468657265756d0c73746f7261676553746f72650001030201020503010001071102046d61696e0002066d656d6f727902000a1201100041204100412010004100412010010b",
                 "nonce" : "0x00",
                 "storage" : {
                 }

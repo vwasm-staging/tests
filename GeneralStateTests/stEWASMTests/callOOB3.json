@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.4.0rc0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callOOB3Filler.yml",
             "sourceHash" : "673ef060173e7e9aecd9b8eb8023d1dac6942661d7f1b398aa2ff3ceba8a8699"
         },

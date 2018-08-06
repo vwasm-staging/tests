@@ -2,8 +2,8 @@
     "returnPredefinedData" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0.dev0-7+commit.b3285e37.dirty",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.4.0rc0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnPredefinedDataFiller.yml",
             "sourceHash" : "d0db136d97690da55865593b774215cacd33c74b0f9f793700f8783e756c7d16"
         },
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xfa30449dbffb5a8f27bc5d5a2f1ec1cb62359a3f7a5d9d374ab44a9d5e87f9c2",
+                    "hash" : "0x037448b78c5b092b3c3d4a6297d1719075fc45e6bcee3a5f0372b6a368a0ec63",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -39,7 +39,7 @@
         },
         "transaction" : {
             "data" : [
-                "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0672657475726e0000030201010503010001071102066d656d6f72790200046d61696e00010a0a0108004100411410000b0b1a010041000b1400000000000000000000000000000000efbeadde0016046e616d65010f02000672657475726e01046d61696e"
+                "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0672657475726e0000030201010503010001071102066d656d6f72790200046d61696e00010a0a0108004100411410000b0b1a010041000b1400000000000000000000000000000000efbeadde"
             ],
             "gasLimit" : [
                 "0x5000001"
