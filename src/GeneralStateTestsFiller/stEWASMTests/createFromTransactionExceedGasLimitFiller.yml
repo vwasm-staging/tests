@@ -23,12 +23,12 @@ createFromTransactionExceedGasLimit:
       network:
         - ALL
       result:
-        # contract creation requires:     4974320 (0x4be6f0)
-        # gasLimit is set as:             4974319 (0x4be6ef)
+        # contract creation requires:     4972816 (0x4be110)
+        # gasLimit is set as:             4972815 (0x4be10f)
         # initialBalance - finalBalance = usedGas
-        # 100000000000   - 99995025681  = 4974319  (0x4be6ef)
+        # 100000000000   - 99995027185  = 4972815 (0x4be10f)
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99995025681'
+          balance: '99995027185'
         # should not create contract, contract creation exceeds gas limit
         6295ee1b4f6dd65047762f924ecd367c17eabf8f:
           shouldnotexist: "1"
@@ -47,7 +47,7 @@ createFromTransactionExceedGasLimit:
         )
       )
     gasLimit:
-    - '0x4be6ef'
+    - '0x4be10f'
     gasPrice: '0x01'
     nonce: '0x00'
     secretKey: 45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8
