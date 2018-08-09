@@ -19,7 +19,7 @@ createCode:
     #   storage: {}
     #   code: |
     #     (module
-    #       (import "ethereum" "return" (func $return (param i32 i32)))
+    #       (import "ethereum" "finish" (func $finish (param i32 i32)))
     #       (memory 1)
     #       ;; dummy code, it doesn't do anything
     #       (data (i32.const 512) "\be\ef")
@@ -35,7 +35,7 @@ createCode:
     #         (set_local $memPointerCode (i32.const 512))
     #         (set_local $codeLen (i32.const 2))
 
-    #         (call $return
+    #         (call $finish
     #           (get_local $memPointerCode)
     #           (get_local $codeLen)
     #         )
@@ -53,7 +53,7 @@ createCode:
 
           ;; the inner contract to create
           ;; see WASM source for compiled code, above
-          (data (i32.const 256) "\00\61\73\6d\01\00\00\00\01\09\02\60\02\7f\7f\00\60\00\00\02\13\01\08\65\74\68\65\72\65\75\6d\06\72\65\74\75\72\6e\00\00\03\02\01\01\05\03\01\00\01\07\11\02\06\6d\65\6d\6f\72\79\02\00\04\6d\61\69\6e\00\01\0a\15\01\13\01\02\7f\41\80\04\21\00\41\02\21\01\20\00\20\01\10\00\0b\0b\09\01\00\41\80\04\0b\02\be\ef")
+          (data (i32.const 256) "\00\61\73\6d\01\00\00\00\01\09\02\60\02\7f\7f\00\60\00\00\02\13\01\08\65\74\68\65\72\65\75\6d\06\66\69\6e\69\73\68\00\00\03\02\01\01\05\03\01\00\01\07\11\02\06\6d\65\6d\6f\72\79\02\00\04\6d\61\69\6e\00\01\0a\15\01\13\01\02\7f\41\80\04\21\00\41\02\21\01\20\00\20\01\10\00\0b\0b\09\01\00\41\80\04\0b\02\be\ef")
 
           (export "memory" (memory 0))
           (export "main" (func $main))

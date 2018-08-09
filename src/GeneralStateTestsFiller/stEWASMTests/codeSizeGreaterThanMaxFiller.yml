@@ -32,12 +32,12 @@ codeSizeGreaterThanMax:
     data:
     - |
       (module
-        (import "ethereum" "return" (func $return (param i32 i32)))
+        (import "ethereum" "finish" (func $finish (param i32 i32)))
         (memory 100)
         (export "memory" (memory 0))
         (export "main" (func $main))
         (func $main
-          (call $return
+          (call $finish
             (i32.const 0)
             (i32.const 24577)) ;; exceeds max code size 24576
         )

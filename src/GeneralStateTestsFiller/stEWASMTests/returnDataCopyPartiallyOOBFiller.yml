@@ -20,7 +20,7 @@ returnDataCopyPartiallyOOB:
       storage: {}
       code: |
         (module
-          (import "ethereum" "return" (func $return (param i32 i32)))
+          (import "ethereum" "finish" (func $finish (param i32 i32)))
           (memory 1)
           ;; data to return
           (data (i32.const 2048) "\de\ad\be\ef")
@@ -36,7 +36,7 @@ returnDataCopyPartiallyOOB:
             (set_local $ptrCode (i32.const 2048))
             (set_local $codeLen (i32.const 4))
 
-            (call $return
+            (call $finish
               (get_local $ptrCode)
               (get_local $codeLen)
             )

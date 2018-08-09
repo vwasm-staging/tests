@@ -29,13 +29,13 @@ returnPredefinedData:
     - |
         (module
           ;; code for a txn which creates an account with some code that is predefined in a data segment
-          (import "ethereum" "return" (func $return (param i32 i32)))
+          (import "ethereum" "finish" (func $finish (param i32 i32)))
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
           (export "memory" (memory 0))
           (export "main" (func $main))
           (func $main
-            (call $return 
+            (call $finish
               (i32.const 0)
               (i32.const 20)
             )
