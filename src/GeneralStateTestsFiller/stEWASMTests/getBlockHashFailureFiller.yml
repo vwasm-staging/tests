@@ -1,6 +1,6 @@
 # Basic EWASM interface test for getBlockHash
 ---
-getBlockHash:
+getBlockHashFailure:
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: '0x020000'
@@ -26,8 +26,9 @@ getBlockHash:
           (func $main
             (i32.store (i32.const 96) (i32.const 1)) ;; key 1
             (i32.store (i32.const 64)
-              (call $getBlockHash (i64.const 0) (i32.const 32)))
-            (call $storageStore (i32.const 0) (i32.const 32))
+              (call $getBlockHash (i64.const 03) (i32.const 32)))
+            ;;                   try block 1
+            (call $storageStore (i32.const 1) (i32.const 32))
             (call $storageStore (i32.const 96) (i32.const 64))
             ))
       nonce: ''
@@ -41,8 +42,8 @@ getBlockHash:
         - ALL
       result:
         # getBlockHash:    800
-        # storageStore:  20000 (non-zero)
-        # storageStore:   5000 (zero)
+        # storageStore:  20000 (zero)
+        # storageStore:   5000 (non-zero
         # Tx Cost:       21000
         #---------------------------
         # Total:         46800
@@ -52,8 +53,8 @@ getBlockHash:
           balance: '99999953200'
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
-            0: '0x044852b2a670ade5407e78fb2863c51de9fcb96542a07186fe3aeda6bb8a116d',
-            1: '0' # success
+            0: '', # block not found
+            1: '1' # failure
           }
   transaction:
     data:
