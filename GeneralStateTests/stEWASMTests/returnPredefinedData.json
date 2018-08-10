@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.4.0rc0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnPredefinedDataFiller.yml",
-            "sourceHash" : "d0db136d97690da55865593b774215cacd33c74b0f9f793700f8783e756c7d16"
+            "sourceHash" : "b87ebfec1f0afd48ed3fd2685a4581058cbb1b396ddb35f3dcb5be099182217b"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -39,7 +39,7 @@
         },
         "transaction" : {
             "data" : [
-                "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0672657475726e0000030201010503010001071102066d656d6f72790200046d61696e00010a0a0108004100411410000b0b1a010041000b1400000000000000000000000000000000efbeadde"
+                "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0666696e6973680000030201010503010001071102066d656d6f72790200046d61696e00010a0a0108004100411410000b0b1a010041000b1400000000000000000000000000000000efbeadde"
             ],
             "gasLimit" : [
                 "0x5000001"

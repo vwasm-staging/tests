@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.4.0rc0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnDataCopyTooLongOOBFiller.yml",
-            "sourceHash" : "edb10855565652e4ecdca24bb4c9702325799cc3955c1a9d2287fe8129f73972"
+            "sourceHash" : "0e008bcfc629749f6b046a9a1bfe7a9d054ee1db9cadd11eaa80e74f282e69bd"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xe887e86848194fb05941ae7570f1fe5e702258399b8a6c071246b3275ac5d2dd",
+                    "hash" : "0xfdc625dcdce2e00b4b36d26a9428f1811fa1bb40da348eafb5e1427fec659e1b",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -45,7 +45,7 @@
             },
             "0xdeadbeef00000000000000000000000000000001" : {
                 "balance" : "0x00",
-                "code" : "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0672657475726e0000030201010503010001071102066d656d6f72790200046d61696e00010a15011301027f4180102100410421012000200110000b0b0b01004180100b04deadbeef",
+                "code" : "0x0061736d0100000001090260027f7f0060000002130108657468657265756d0666696e6973680000030201010503010001071102066d656d6f72790200046d61696e00010a15011301027f4180102100410421012000200110000b0b0b01004180100b04deadbeef",
                 "nonce" : "0x00",
                 "storage" : {
                 }

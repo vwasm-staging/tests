@@ -34,13 +34,13 @@ createFromTransactionReturnRandomBytes:
     data:
     - |
       (module
-        (import "ethereum" "return" (func $return (param i32 i32)))
+        (import "ethereum" "finish" (func $finish (param i32 i32)))
         (memory 100)
         (data (i32.const 0)  "\49\09\09\06\96\68\38\a5\68\11\56\a6\54\87\c3\45\ab\e4\89\c2\68\7c\cd\8f\25\4c\db\b5\28\aa\e7\32\d2\a3\0f\2b\91\8b\e7\2a\40\9a\88\30\6a\56\52\5d\28\9c\49\0c\26\26\f3\4f\01\05\25\cf\e0\c4\45\e3\d9\ff\28\42\bc\68\c2\d8\ab\2f\9a\24\04\59\30\da\fe\f5\b1\cd\0e\3a\03\4b\9c\da\1a\99\a7\5b\b2\ab\15\7a\94\54\19\dd\0d\3d\6e\b3\ff\09\c4\ac\13\ab\78\2e\22\d8\b2\aa\08\bf\1e\82\47\18\4f\ab\4e\51\65\1f\1a\b6\84\82\06\6a\e7\59\bf\3f\6a\8a\5a\53\ca\78\69\ae\cf\f9\2f\ef\b2\32\06\f5\7c\aa\ad\cf\ef\6f\9e\36\9d\aa\9f\62\df\a7\6a\c3\da\53\94\02\27\78\d8\7a\85\72\2a\42\65\f8\4e\1c\98\ae\d4\4a\4f\f3\cc\df\2a\a0\dd\c8\82\66\bf\5a\13\c9\41\4c\ea\e8\2b\5f\7f\9e\6a\8b\cb\cc\b4\f7\71\5b\d9\79\a9\2e\45\f8\8f\32\6e\8f\6c\2b\c3\cb\08\2f\85\34\5d\e4\46\a0\2a\dc\28\7a\e8\30\f2\1a\a2\71\e7\41")
         (export "memory" (memory 0))
         (export "main" (func $main))
         (func $main
-          (call $return
+          (call $finish
             (i32.const 0)
             (i32.const 256))
         )
