@@ -1,4 +1,4 @@
-# selfDestruct existing account
+# self destruct existing account
 ---
 selfDestructExistingAccount:
   env:
@@ -19,17 +19,13 @@ selfDestructExistingAccount:
       code: |
         (module
           (import "ethereum" "selfDestruct" (func $selfDestruct (param i32)))
+          (import "ethereum" "getCaller"    (func $getCaller    (param i32)))
           (memory 1)
-          (data (i32.const 0) "\80\75\8d\9f\09\8c\e0\89\9d\c0\70\1f\9d\ad\fc\f4\ad\45\8d\c8")
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
-            (call $selfDestruct (i32.const 0))))
-      nonce: ''
-      storage: {}
-    c88d45adf4fcad9d1f70c09d89e08c099f8d7580:
-      balance: '0'
-      code: ''
+            (call $getCaller (i32.const 32))
+            (call $selfDestruct (i32.const 32))))
       nonce: ''
       storage: {}
   expect:
@@ -42,14 +38,13 @@ selfDestructExistingAccount:
       result:
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           shouldnotexist: "1"
+        # InitialBalance + destructedBalance - CALLER - SELFDESTRUCT - TXCOST + gasRefund 
+        # 100000000000   + 100000000000      - 2      - 5000         - 21000  + 13001     = 199999986999
+        # if refund (24000) is greater than the half of used gas, then it will only
+        # refunt half the gas used.          
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99999973000'
+          balance: '199999986999'
           code: ''
-          storage: {}
-        c88d45adf4fcad9d1f70c09d89e08c099f8d7580:
-          balance: '100000000000' 
-          code: ''
-          nonce: ''
           storage: {}
   transaction:
     data:

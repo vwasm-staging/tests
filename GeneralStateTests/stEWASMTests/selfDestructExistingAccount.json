@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
             "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/selfDestructExistingAccountFiller.yml",
-            "sourceHash" : "0758a30f0331702cf8e359011816dc18cd253b524c3f131c6b4794a887af128f"
+            "sourceHash" : "689ac901dbec6b7b2c7cc616a990fd24db14732418afe41a220315830fa774ff"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x2d7704aa3fc4b3a90cbb409eea8e057161855b5018cec9d233e203fa8fe07df5",
+                    "hash" : "0x2c3e948e8774f0f9d32e592f6bc9a71bc767e6ac5a0ab99264697de483cefc3f",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,14 +38,7 @@
             },
             "0xb94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d0100000001080260017f0060000002190108657468657265756d0c73656c6644657374727563740000030201010503010001071102046d61696e0001066d656d6f727902000a08010600410010000b0b1a010041000b1480758d9f098ce0899dc0701f9dadfcf4ad458dc8",
-                "nonce" : "0x00",
-                "storage" : {
-                }
-            },
-            "0xc88d45adf4fcad9d1f70c09d89e08c099f8d7580" : {
-                "balance" : "0x00",
-                "code" : "",
+                "code" : "0x0061736d0100000001080260017f00600000022e0208657468657265756d0c73656c664465737472756374000008657468657265756d0967657443616c6c65720000030201010503010001071102046d61696e0002066d656d6f727902000a0c010a0041201001412010000b",
                 "nonce" : "0x00",
                 "storage" : {
                 }

@@ -2,10 +2,10 @@
     "selfDestruct" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
+            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/selfDestructFiller.yml",
-            "sourceHash" : "66ace7f30a0d0f3655525e39cd6655ddfd13dfabb4ce6246d654aafb0b88b1fe"
+            "sourceHash" : "f70a63be339b0d4fb0687706e5082dc91e553dfb01b7669130f3c76ddd2f15c8"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x2c3e948e8774f0f9d32e592f6bc9a71bc767e6ac5a0ab99264697de483cefc3f",
+                    "hash" : "0x810f0740f5bd5d5c767682f520e9012be28653885f2bc35c791f3dec2ef67c65",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -37,7 +37,7 @@
                 }
             },
             "0xb94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
-                "balance" : "0x174876e800",
+                "balance" : "0x00",
                 "code" : "0x0061736d0100000001080260017f00600000022e0208657468657265756d0c73656c664465737472756374000008657468657265756d0967657443616c6c65720000030201010503010001071102046d61696e0002066d656d6f727902000a0c010a0041201001412010000b",
                 "nonce" : "0x00",
                 "storage" : {
