@@ -138,7 +138,7 @@ returnDataCopy:
         - ALL
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99999953295'
+          balance: '99999953292'
         deadbeef00000000000000000000000000000000:
           storage: {
             # Expect CALL to return success

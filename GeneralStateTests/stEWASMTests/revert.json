@@ -2,10 +2,10 @@
     "revert" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
+            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/revertFiller.yml",
-            "sourceHash" : "8eab67d97b3cd4b08dc925c7cd99934f185bd08cea564df2f16b74b29200cf3d"
+            "sourceHash" : "075ce7adb2abdd4b7c23bee41af4715ca15aec0501eb8486fbcb3e90814e7776"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xebc6e0aff5292639c277a74d60a9142ba240d77a9aa79707b1e34f66ca9c1150",
+                    "hash" : "0xa80d67bf63f0bec7d39ad6f1dec63b548a3c071186cb82ff9cd44e211b5393b3",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
