@@ -58,6 +58,9 @@ logTopicVeryLong:
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
 
+          ;; storage keys
+          (data (i32.const 128) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 0
+          (data (i32.const 160) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -77,10 +80,6 @@ logTopicVeryLong:
             (set_local $memStoragekey1 (i32.const 128))
             (set_local $memStoragekey2 (i32.const 160))
             (set_local $memRetdatasize (i32.const 224))
-
-            ;; storage keys
-            (i32.store (get_local $memStoragekey1) (i32.const 0))
-            (i32.store (get_local $memStoragekey2) (i32.const 1))
 
             (i32.store
               ;; store success/failure in mem

@@ -55,7 +55,8 @@ returnDataCopy:
 
           ;; Location of contract to call
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
-
+          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
+          (data (i32.const 64) "\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 2
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -81,8 +82,6 @@ returnDataCopy:
             (set_local $ptrCallResult (i32.const 192))
 
             ;; initialize
-            (i32.store (get_local $ptrStorageKey1) (i32.const 1))
-            (i32.store (get_local $ptrStorageKey2) (i32.const 2))
             (i32.store (get_local $ptrValue) (i32.const 0))
             (i32.store (get_local $ptrData) (i32.const 0))
 

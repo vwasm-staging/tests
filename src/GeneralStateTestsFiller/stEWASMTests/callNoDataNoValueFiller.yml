@@ -24,6 +24,9 @@ callNoDataNoValue:
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
 
+          ;; init mem
+          (data (i32.const 128) "\0a\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+          (data (i32.const 160) "\0b\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -44,10 +47,6 @@ callNoDataNoValue:
             (set_local $ptrStorageKey11 (i32.add (get_local $memStart) (i32.const 32)))
             (set_local $ptrCallData (i32.add (get_local $memStart) (i32.const 64)))
             (set_local $ptrCallDataSize (i32.add (get_local $memStart) (i32.const 96)))
-
-            ;; init mem
-            (i32.store (get_local $ptrStorageKey10) (i32.const 10))
-            (i32.store (get_local $ptrStorageKey11) (i32.const 11))
 
             ;; get call data size
             (set_local $callDataSize (call $getCallDataSize))
@@ -89,7 +88,8 @@ callNoDataNoValue:
 
           (memory 1)
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
-
+          ;; storage keys
+          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -111,7 +111,6 @@ callNoDataNoValue:
             (set_local $ptrResult (i32.add (get_local $memStart) (i32.const 96)))
 
             ;; init mem
-            (i32.store (get_local $ptrStorageKey1) (i32.const 1))
             (i32.store (get_local $ptrValue) (i32.const 0))
             (i32.store (get_local $ptrData) (i32.const 0))
 
