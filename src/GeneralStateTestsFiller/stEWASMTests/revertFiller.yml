@@ -93,11 +93,6 @@ revert:
             (set_local $memStoragekey3 (i32.const 192))
             (set_local $memRetdatasize (i32.const 224))
 
-            ;; storage keys
-            (i32.store (get_local $memStoragekey1) (i32.const 0))
-            (i32.store (get_local $memStoragekey2) (i32.const 1))
-            (i32.store (get_local $memStoragekey3) (i32.const 2))
-
             (i32.store
               ;; store success/failure in mem
               (get_local $memResult)

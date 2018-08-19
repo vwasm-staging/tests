@@ -88,7 +88,8 @@ callNoDataNoValue:
 
           (memory 1)
           (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
-          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+          ;; storage keys
+          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -104,12 +105,12 @@ callNoDataNoValue:
             (set_local $memStart (i32.const 32))
 
             ;; init pointers
+            (set_local $ptrStorageKey1 (get_local $memStart))
             (set_local $ptrValue (i32.add (get_local $memStart) (i32.const 32)))
             (set_local $ptrData (i32.add (get_local $memStart) (i32.const 64)))
             (set_local $ptrResult (i32.add (get_local $memStart) (i32.const 96)))
 
             ;; init mem
-            (i32.store (get_local $ptrStorageKey1) (i32.const 1))
             (i32.store (get_local $ptrValue) (i32.const 0))
             (i32.store (get_local $ptrData) (i32.const 0))
 

@@ -59,10 +59,6 @@ extCodeCopyFullyOOB:
             (set_local $ptrStorageKey2 (i32.const 96))
             (set_local $ptrStorageVal2 (i32.const 128))
 
-            ;; init memory
-            (i32.store (get_local $ptrStorageKey1) (i32.const 1))
-            (i32.store (get_local $ptrStorageKey2) (i32.const 2))
-
             ;; arbitrary value, just make sure it's not written to storage
             (i32.store (get_local $ptrStorageVal2) (i32.const 1))
 
