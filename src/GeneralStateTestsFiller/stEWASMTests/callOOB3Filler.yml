@@ -38,6 +38,9 @@ callOOB3:
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
 
+          ;; init
+          (data (i32.const 64) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+          (data (i32.const 96) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -53,9 +56,6 @@ callOOB3:
             (set_local $memStoragekey1 (i32.const 64))
             (set_local $memStorageval1 (i32.const 96))
 
-            ;; init
-            (i32.store (get_local $memStoragekey1) (i32.const 0))
-            (i32.store (get_local $memStorageval1) (i32.const 1))
 
             ;; we expect this to trap
             (drop

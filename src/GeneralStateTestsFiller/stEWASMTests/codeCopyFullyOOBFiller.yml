@@ -21,6 +21,12 @@ codeCopyFullyOOB:
           (import "ethereum" "getCodeSize" (func $getCodeSize (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
+          ;; $ptrStorageKey1
+          (data (i32.const 0)  "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
+          ;; $ptrStorageKey2
+          (data (i32.const 32) "\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 2
+          ;; ptrStorageVal2 - arbitrary value, just make sure it is not written to storage
+          (data (i32.const 64) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -38,12 +44,6 @@ codeCopyFullyOOB:
             (set_local $ptrStorageVal1 (i32.const 64))
             (set_local $ptrStorageVal2 (i32.const 96))
 
-            ;; init memory
-            (i32.store (get_local $ptrStorageKey1) (i32.const 1))
-            (i32.store (get_local $ptrStorageKey2) (i32.const 2))
-
-            ;; arbitrary value, just make sure it's not written to storage
-            (i32.store (get_local $ptrStorageVal2) (i32.const 1))
 
             ;; get code size
             (set_local $codeSize (call $getCodeSize))

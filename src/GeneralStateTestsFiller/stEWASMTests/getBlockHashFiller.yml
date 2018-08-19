@@ -21,6 +21,9 @@ getBlockHash:
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (import "ethereum" "getBlockHash" (func $getBlockHash (param i64 i32) (result i32)))
           (memory 1)
+          ;; storage keys
+          (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 0
+          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
@@ -38,10 +41,6 @@ getBlockHash:
             
             (set_local $blockNumber (i64.const 0))        ;; block 0
 
-            ;; set values in memory
-            (i32.store (get_local $key0) (i32.const 0)) ;; set value 0
-            (i32.store (get_local $key1) (i32.const 1)) ;; set value 1
-            
             (i32.store (get_local $blockHashExitCode)
               (call $getBlockHash (get_local $blockNumber) (get_local $blockHashResult)))
               

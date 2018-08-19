@@ -20,17 +20,12 @@ callCode:
         (module
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
+          (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; Path
+          (data (i32.const 32) "\cd\ab\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; Value
           (export "memory" (memory 0))
           (export "main" (func $main))
           (func $main
-            ;; Path
-            (i32.store (i32.const 0) (i32.const 0))
-
-            ;; Value
-            (i32.store (i32.const 32) (i32.const 0xabcd))
-
             ;; Write to storage
-
             (call $storageStore (i32.const 0) (i32.const 32))
           )
         )
@@ -46,7 +41,7 @@ callCode:
 
           (memory 1)
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
-
+          (data (i32.const 128) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; Path
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -68,8 +63,6 @@ callCode:
             )
 
             ;; Make sure the call succeeded (result was 0)
-            ;; Path
-            (i32.store (i32.const 128) (i32.const 1))
             ;; Write it to storage, checked in post state expect statement
             (call $storageStore
               ;; pathOffset
