@@ -22,14 +22,14 @@ getBalanceExt:
       balance: '100000000000'
       code: |
         (module
-          (import  "ethereum" "getBalance"  (func $getBalance (param i32 i32)))
+          (import  "ethereum" "getExternalBalance"  (func $getExternalBalance (param i32 i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1 )
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
           (export "memory" (memory 0))
           (export "main" (func $main))
           (func $main
-            (call $getBalance  (i32.const 0) (i32.const 100))
+            (call $getExternalBalance  (i32.const 0) (i32.const 100))
             (call $storageStore (i32.const 200) (i32.const 100))
           )
         )
