@@ -24,7 +24,7 @@ callValueInStaticMode:
           (memory 1)
           ;; 0-20 - Address
           ;;
-          (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 0) "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
@@ -44,7 +44,7 @@ callValueInStaticMode:
         (module
           (import "ethereum" "call" (func $call (param i64 i32 i32 i32 i32) (result i32)))
           (memory 1)
-          (data (i32.const 0) "\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 0) "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\02")
 
           (export "memory" (memory 0))
           (export "main" (func $main))

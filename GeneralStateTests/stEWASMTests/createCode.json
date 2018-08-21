@@ -2,10 +2,10 @@
     "createCode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createCodeFiller.yml",
-            "sourceHash" : "3a4eb9a5c018f5370c8c6003204b1858da2b0ea4722d67a293235c25828de7d4"
+            "sourceHash" : "5de93219c295596e55ac2629bfae6bd0f31d3f03003156580c32615c6c8e46ad"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x587313bd56a747a7904fc100ef0070961ff9d5cf2698ec1a9710d56933d54bdf",
+                    "hash" : "0xe8b53b8749c86fd5461474576f5cafbeb79ebce96700f277432d7e1ddfc611f1",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

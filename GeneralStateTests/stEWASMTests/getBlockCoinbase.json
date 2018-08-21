@@ -2,10 +2,10 @@
     "getBlockCoinbase" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockCoinbaseFiller.yml",
-            "sourceHash" : "d8b3d1024a800671032de8f1149ab5479fff270a1718ca1fd924b6ce95f05cbf"
+            "sourceHash" : "b6ddb3a31d56e675b01603893e15668bef83fa8ca9687d0c7fc3946810c399bd"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xd3ad99db9b559ce62ac8248e82235692ccda82db7f412e80f432e90e4414710d",
+                    "hash" : "0xd94028b4e99afd7b9eed019e6e0f3ec47a50a3a4fb9318c09f2351ee8114e320",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

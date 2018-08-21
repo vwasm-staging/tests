@@ -53,7 +53,7 @@ returnDataCopyFullyOOB:
           (import "ethereum" "returnDataCopy" (func $returnDataCopy (param i32 i32 i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
-          (data (i32.const 512) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 512) "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
           (export "memory" (memory 0))
           (export "main" (func $main))
 

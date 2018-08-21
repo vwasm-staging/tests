@@ -2,10 +2,10 @@
     "callValueInStaticMode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callValueInStaticModeFiller.yml",
-            "sourceHash" : "3ee5d69b37a25ed16faaed65e9bdd0c2c9c7523fb430ffefd727abe98fc85d81"
+            "sourceHash" : "5cb054c0345cb0a1f11c3302461e46b8e7ea9831bd0fbb3af009ca7620cacf66"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x955eeec03b25d67c8f3baef437e949d864f604143211652288dd348f28aa666f",
+                    "hash" : "0xd3b1f4893cf37775ebbb8745124396e3d0ad702a85eb7ff4c710ef0cca9a1793",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,14 +38,14 @@
             },
             "0xdeadbeef00000000000000000000000000000000" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d01000000010c0260047e7f7f7f017f60000002170108657468657265756d0a63616c6c5374617469630000030201010503010001071102046d61696e0001066d656d6f727902000a15011300411442c09a0c41004134410010003602000b0b1a010041000b1401000000000000000000000000000000efbeadde",
+                "code" : "0x0061736d01000000010c0260047e7f7f7f017f60000002170108657468657265756d0a63616c6c5374617469630000030201010503010001071102046d61696e0001066d656d6f727902000a15011300411442c09a0c41004134410010003602000b0b1a010041000b14deadbeef00000000000000000000000000000001",
                 "nonce" : "0x00",
                 "storage" : {
                 }
             },
             "0xdeadbeef00000000000000000000000000000001" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d01000000010d0260057e7f7f7f7f017f60000002110108657468657265756d0463616c6c0000030201010503010001071102066d656d6f72790200046d61696e00010a29012701037f4120210141c00021022001410a360200200042c09a0c410020012002410010003602000b0b1a010041000b1402000000000000000000000000000000efbeadde",
+                "code" : "0x0061736d01000000010d0260057e7f7f7f7f017f60000002110108657468657265756d0463616c6c0000030201010503010001071102066d656d6f72790200046d61696e00010a29012701037f4120210141c00021022001410a360200200042c09a0c410020012002410010003602000b0b1a010041000b14deadbeef00000000000000000000000000000002",
                 "nonce" : "0x00",
                 "storage" : {
                 }

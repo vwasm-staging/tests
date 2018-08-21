@@ -2,10 +2,10 @@
     "callStatic" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callStaticFiller.yml",
-            "sourceHash" : "1bc74e09806d064b5ed08b43eba45de62b5c9489fce03c7d0c186832e2e1e492"
+            "sourceHash" : "3e8abf98a01877d883ecd5bdd187356e59d5af6350c9900bf9458f57f7bc06a2"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xfe86b4feab3908c6e0a786b6254756908e000ae651962221f42b77e9b43fb823",
+                    "hash" : "0x6a7f00f8e3698df392a94a0426518334bde26eef984937f0274d8a5bf8b98a6c",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,7 +38,7 @@
             },
             "0xb94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d01000000010c0260047e7f7f7f017f60000002170108657468657265756d0a63616c6c5374617469630000030201010503010001071102046d61696e0001066d656d6f727902000a15011300413642c09a0c41004114410210003602000b0b21020041000b140bbf6e7e673153c197862a8ebcede5fc74534fc90041140b021234",
+                "code" : "0x0061736d01000000010c0260047e7f7f7f017f60000002170108657468657265756d0a63616c6c5374617469630000030201010503010001071102046d61696e0001066d656d6f727902000a15011300413642c09a0c41004114410210003602000b0b21020041000b14c94f5374fce5edbc8e2a8697c15331677e6ebf0b0041140b021234",
                 "nonce" : "0x00",
                 "storage" : {
                 }

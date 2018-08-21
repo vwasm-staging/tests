@@ -89,7 +89,7 @@ callValueExceeds64bit:
           ;;(import "debug" "printMemHex" (func $printMemHex (param i32 i32)))
 
           (memory 1)
-          (data (i32.const 0) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 0) "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
 
           (export "memory" (memory 0))
           (export "main" (func $main))
