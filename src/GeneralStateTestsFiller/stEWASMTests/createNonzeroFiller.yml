@@ -192,7 +192,7 @@ createNonzero:
             0: '0',
             # Expect CREATE result to be new contract address
             # $memPointerStorageKey2 = 1
-            1: '0xf2048c36a5536fea3bc71d49ed59f2c65c546eea',
+            1: '0xea6e545cc6f259ed491dc73bea6f53a5368c04f2',
             # Result of call, 0 is success
             2: '0',
             # Nothing should be stored at this key

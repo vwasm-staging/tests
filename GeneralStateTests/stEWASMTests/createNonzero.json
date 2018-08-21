@@ -2,10 +2,10 @@
     "createNonzero" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createNonzeroFiller.yml",
-            "sourceHash" : "0c10a6a32b4ea7df23a9cd03a327cfa0211eeda28b7570d87f02882a167bd8a6"
+            "sourceHash" : "19f5c82fc93012aeebad37c4ba4a504140aeb594efe2228b9b06d712315b5106"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xbfa7da3c3584d7312438b6480e3fdc8af774d87d9954c076151e8e15d06ae5fb",
+                    "hash" : "0xbd97a690343b34c46df4e3b88771173fdade4092787343a2649972fcd1908a34",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

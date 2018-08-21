@@ -2,10 +2,10 @@
     "getAddress" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getAddressFiller.yml",
-            "sourceHash" : "7fc38da51c58492d438689ee7a448257b73042644e842289b797acfe44aefbf9"
+            "sourceHash" : "415af66933793b3a111b61227d5226ecfc979a444bb5bad9eef4cd96a012b545"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xca34d1d74749c126ee24469185b6158fb496c8930e76b1e64ac426af06884999",
+                    "hash" : "0x741bed54f8135a12473c278a4b6097e7da68134291d41bd00c3a484dee71846e",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

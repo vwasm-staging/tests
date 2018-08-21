@@ -2,10 +2,10 @@
     "getAddressRust" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getAddressRustFiller.yml",
-            "sourceHash" : "142e4f067775e2d0a1228ac61b62df0337f986f4b61fe84d141d3fb235fda32d"
+            "sourceHash" : "f69e729d793cae3c50c796be1fb2312dba9397d1d6115a7f6b3fdf8137e9763d"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x9b36ff6e16bba2e0d3c28bd2d7162ea2758c52333fbe54fbf1274fe889f522a7",
+                    "hash" : "0xbb521ee540239ece9b22cca4ea7627dc529e672405c62ca75444b00ee45436b2",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
