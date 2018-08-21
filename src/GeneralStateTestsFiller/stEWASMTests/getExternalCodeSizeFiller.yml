@@ -28,7 +28,7 @@ getExternalCodeSize:
           (import "ethereum" "getExternalCodeSize" (func $getExternalCodeSize (param i32) (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
           (memory 1)
-          (data (i32.const 64)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 64)  "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
 
           (export "memory" (memory 0))
           (export "main" (func $main))

@@ -64,7 +64,7 @@ revert:
           (import "ethereum" "returnDataCopy" (func $returnDataCopy (param i32 i32 i32)))
 
           (memory 1)
-          (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ef\be\ad\de")
+          (data (i32.const 0)  "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
 
           ;; storage keys
           (data (i32.const 128) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 0

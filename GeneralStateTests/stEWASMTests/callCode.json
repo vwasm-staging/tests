@@ -2,10 +2,10 @@
     "callCode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callCodeFiller.yml",
-            "sourceHash" : "13eec213c830971f7bffa9cbff820e5c2e5e0af6c753df8b59e49d528c77a5d7"
+            "sourceHash" : "ff091a513980e9c1111f7cdc129989cdac7b43aa8f1592ec9517b4e824fb85f9"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x7d6eba811b4a30fad9bfd73dc5753fc92873f6e5deb8864b877fe3597911e6e4",
+                    "hash" : "0x4f6bff1dcb7117cd62b1938d4c349ad6ab8ba7db56bac97c2ae315b8e40eb681",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
@@ -38,7 +38,7 @@
             },
             "0xabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd" : {
                 "balance" : "0x174876e800",
-                "code" : "0x0061736d0100000001120360027f7f0060057e7f7f7f7f017f600000022d0208657468657265756d0c73746f7261676553746f7265000008657468657265756d0863616c6c436f64650001030201020503010001071102066d656d6f72790200046d61696e00020a20011e0041e00042a08d064100412041204101100136020041800141e00010000b0b40020041000b1400000000000000000000000000000000efbeadde004180010b200100000000000000000000000000000000000000000000000000000000000000",
+                "code" : "0x0061736d0100000001120360027f7f0060057e7f7f7f7f017f600000022d0208657468657265756d0c73746f7261676553746f7265000008657468657265756d0863616c6c436f64650001030201020503010001071102066d656d6f72790200046d61696e00020a20011e0041e00042a08d064100412041204101100136020041800141e00010000b0b40020041000b14deadbeef00000000000000000000000000000000004180010b200100000000000000000000000000000000000000000000000000000000000000",
                 "nonce" : "0x00",
                 "storage" : {
                 }
