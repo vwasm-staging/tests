@@ -56,7 +56,7 @@ getExternalCodeSize:
         abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd:
           storage: {
             # length of the code for the 'deadbeef' account
-            0: '0x08'
+            0: '0x0800000000000000000000000000000000000000000000000000000000000000'
           }
   transaction:
     data: 

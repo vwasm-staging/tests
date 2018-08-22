@@ -51,7 +51,7 @@ codeCopy:
             # This storage slot should contain the first ten bytes of the code contained
             # at this address. Note that it's in little-endian order, so it's the reverse
             # of the code contained in the filled test file.
-            0: "0x0f01000000016d736100"
+            0: "0x0061736d01000000010f00000000000000000000000000000000000000000000"
           }
   transaction:
     data:

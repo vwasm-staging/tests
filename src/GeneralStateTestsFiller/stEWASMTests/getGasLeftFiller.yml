@@ -44,8 +44,8 @@ getGasLeft:
           balance: '99998958998'
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
-                          # gasLimit - getGasLeft  - useGas  - txCost
-            0: '0x406bb6' # 5242880  - 2           - 1000000 - 21000   = 4221878 (406bb6)
+                                                                                    # gasLimit - getGasLeft  - useGas  - txCost
+            0: '0xb66b400000000000000000000000000000000000000000000000000000000000' # 5242880  - 2           - 1000000 - 21000   = 4221878 (406bb6)
           }
   transaction:
     data:

@@ -76,7 +76,7 @@ getCallDataSizeInRust:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           balance: '99999957910'
           storage: {
-            0: '16'
+            0: '0x1000000000000000000000000000000000000000000000000000000000000000'
           }
   transaction:
     data:

@@ -22,7 +22,7 @@ getCallDataSize:
           (export "main" (func $main))
           (export "memory" (memory 0))
           (func $main
-            (i32.store (i32.const 60) (call $getCallDataSize))
+            (i32.store (i32.const 32) (call $getCallDataSize))
             (call $storageStore (i32.const 0) (i32.const 32))))
       nonce: ''
       storage: {}
@@ -42,7 +42,7 @@ getCallDataSize:
           balance: '99999957910'
         deadbeef00000000000000000000000000000000:
           storage: {
-            0: '0x1000000000000000000000000000000000000000000000000000000000'
+            0: '0x1000000000000000000000000000000000000000000000000000000000000000'
           }
   transaction:
     data:

@@ -42,7 +42,7 @@ getBlockNumber002:
           balance: '99999958998'            
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
-            0: '0x1388' # block number 5000
+            0: '0x8813000000000000000000000000000000000000000000000000000000000000' # block number 5000
           }
   transaction:
     data:

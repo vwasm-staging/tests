@@ -27342,9 +27342,7 @@ ecAddCallDataCopy:
           balance: '99999958217'
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
-            # should be
-            # 0: '0x030644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd3'
-            0: '0xd3cf876dc108c2d3a81c8716a91678d9851518685b04859b021a132ee7440603'
+            0: '0x030644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd3'
           }
   transaction:
     data:
