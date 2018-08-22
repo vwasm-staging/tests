@@ -43,7 +43,7 @@ getCallValue:
           balance: '99999954202'
         abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd:
           storage: {
-            0: '0x1234'
+            0: '0x3412000000000000000000000000000000000000000000000000000000000000'
           }
   transaction:
     data: 

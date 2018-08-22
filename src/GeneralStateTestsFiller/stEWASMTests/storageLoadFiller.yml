@@ -19,12 +19,12 @@ storageLoad:
           (import  "ethereum" "storageLoad"  (func $storageLoad (param i32 i32)))
           (import  "ethereum" "storageStore"  (func $storageStore (param i32 i32)))
           (memory 1 )
-          (data (i32.const 400)  "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+          (data (i32.const 400)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
           (export "memory" (memory 0))
           (export "main" (func $main))
 
           (func $main
-            (call $storageLoad (i32.const 0) (i32.const 500)) ;; mem[500] = sload(0) = "deadbeef"
+            (call $storageLoad (i32.const 0) (i32.const 500))    ;; mem[500] = sload(0) = "deadbeef"
             (call $storageStore (i32.const 400) (i32.const 500)) ;; storage[1]  <- mem[500] = "deadbeef"
           )
         )

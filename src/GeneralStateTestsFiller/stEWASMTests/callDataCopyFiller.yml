@@ -52,7 +52,7 @@ callDataCopy:
           balance: '99999958858'
         abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd:
           storage: {
-            0: '0x3412'
+            0: '0x1234000000000000000000000000000000000000000000000000000000000000' # 32 bytes
           }
   transaction:
     data: 

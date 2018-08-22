@@ -92,7 +92,7 @@ rustStorageStore:
           balance: '99999959000'
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
-            0: '0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b' # harcoded in rust
+            0: '0x0bbf6e7e673153c197862a8ebcede5fc74534fa9000000000000000000000000' # harcoded in rust
           }
   transaction:
     data:

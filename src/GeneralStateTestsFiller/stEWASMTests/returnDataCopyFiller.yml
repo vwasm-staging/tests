@@ -55,8 +55,8 @@ returnDataCopy:
 
           ;; Location of contract to call
           (data (i32.const 0) "\de\ad\be\ef\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
-          (data (i32.const 32) "\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 1
-          (data (i32.const 64) "\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 2
+          (data (i32.const 32) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01") ;; 1
+          (data (i32.const 64) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\02") ;; 2
           (export "memory" (memory 0))
           (export "main" (func $main))
 
@@ -142,10 +142,10 @@ returnDataCopy:
           storage: {
             # Expect CALL to return success
             # $ptrStorageKey1 = 1
-            1: '0',
-            # Expect returnDataCopy to return four bytes, '0xdeadbeef' backwards
+            1: '0x0000000000000000000000000000000000000000000000000000000000000000',
+            # Expect returnDataCopy to return four bytes, '0xdeadbeef...' 
             # $ptrStorageKey2 = 2
-            2: '0xefbeadde',
+            2: '0xdeadbeef00000000000000000000000000000000000000000000000000000000',
           }
   transaction:
     data:

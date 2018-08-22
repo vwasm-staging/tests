@@ -90,9 +90,9 @@ callCode:
           storage: {
             # make sure the storageStore in the first contract's code wrote to
             # the second contract's storage
-            0: '0xabcd',
+            0: '0xcdab000000000000000000000000000000000000000000000000000000000000',
             # this is the return value of callCode, make sure it's 0 (success)
-            1: '0x00'
+            1: '0x0000000000000000000000000000000000000000000000000000000000000000'
           }
   transaction:
     data: 

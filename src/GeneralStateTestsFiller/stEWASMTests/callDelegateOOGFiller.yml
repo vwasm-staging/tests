@@ -95,7 +95,7 @@ callDelegateOOG:
         b100000000000000000000000000000000000001:
           balance: '100000000000'
           storage: {
-           0: '0x01'  # Runs Out Of Gas, VM result should be 1
+           0: '0x0100000000000000000000000000000000000000000000000000000000000000'  # Runs Out Of Gas, VM result should be 1
           }
         c100000000000000000000000000000000000001:
           balance: '100000000000'

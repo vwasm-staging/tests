@@ -58,7 +58,7 @@ getGasLeftCountUsedGas:
         b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           storage: {
                           # gasLimit - getAddress - getBalance getGasLeft - txCost
-            0: '0x4fac64' # 5242880  - 2            400        - 2        - 21000   = 5221476 (4fac64)
+            0: '0x64ac4f0000000000000000000000000000000000000000000000000000000000' # 5242880  - 2            400        - 2        - 21000   = 5221476 (4fac64)
           }
   transaction:
     data:
