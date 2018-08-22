@@ -2,10 +2,10 @@
     "getCallDataSizeInRust" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCallDataSizeInRustFiller.yml",
-            "sourceHash" : "61106b0bce5bd9a1b54eb9e8fb1d4a431e581d1cd1f62749d92f9449ad10dfd5"
+            "sourceHash" : "bd2b4f0ec4994861fcedfcf151a60383c22412ae55c405e7fdefc905dbd57fb7"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x953dba286e4ac12f15faade3f84053869a8f7d8ad0074ed6bbe0e1b92df6b630",
+                    "hash" : "0xf9e8341aad1139d60b31e2c87aa251823d778e84a049ed2844bb91c6d222f07c",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

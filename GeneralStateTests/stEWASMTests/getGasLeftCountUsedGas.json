@@ -2,10 +2,10 @@
     "getGasLeftCountUsedGas" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getGasLeftCountUsedGasFiller.yml",
-            "sourceHash" : "6ec92723c1f5ff97b6354119b5899e936b1c1e205a69afdc3bd728384cf12054"
+            "sourceHash" : "82eaefc333016518bf0443663eaa26560f33db2ec5e45a535bd46a12c0e93ee5"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x3c7355566519d61b9cf1446a5008c567036f0c592e54bdb5eec63f33e38aa9d9",
+                    "hash" : "0xfb179ed8527fdf6bd994e13438cd2910630097bb1e9894aff24eb9bc38c9a0c8",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

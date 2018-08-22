@@ -2,10 +2,10 @@
     "getCodeSize" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCodeSizeFiller.yml",
-            "sourceHash" : "2a7530ca1a521440181c05811d2cd595318a2f5340b3f4ae3f3d516e08716a10"
+            "sourceHash" : "78bddd766043b82a775aa9164320c256b2afc4194413be38cf3b0e20439cafbb"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xb6f1aabd6192fc84b065af51690c9fa48bef6022ae0c438f1bf5bae4697a2d50",
+                    "hash" : "0xc4f8ba724efd72299934189628ae4871eb108f7ccb0d1fdb419f8ae9d8ee28fb",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

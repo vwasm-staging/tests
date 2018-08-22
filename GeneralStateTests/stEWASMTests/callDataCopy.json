@@ -2,10 +2,10 @@
     "callDataCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataCopyFiller.yml",
-            "sourceHash" : "8f00ed047835f526aa00c29f0f5800073b5279b367d2fe7bef1f3bef1b991421"
+            "sourceHash" : "7751fa84c00f634c49c7a1605ae1e9cdbe58f44252029dce5195111b4238e683"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xae82e83342877eaac94f9625e0f0c5517902c5f184b0b979218846433167f047",
+                    "hash" : "0x685317b83728ab60456f57fa1e427dd8ed0fb508dd0d8f4a66ea51420b2d0659",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

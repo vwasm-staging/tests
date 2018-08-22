@@ -2,8 +2,8 @@
     "codeCopyPartiallyOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/codeCopyPartiallyOOBFiller.yml",
             "sourceHash" : "b6631e042b61bb4656d346bd24e86cbb6c8383981739d7c8db7e2d53043c8c2b"
         },

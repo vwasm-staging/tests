@@ -2,10 +2,10 @@
     "getBlockNumber002" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockNumber002Filler.yml",
-            "sourceHash" : "1a1d772d91d830d90025a6aa378d4d9f19576e01b714afb5554f2966842382c2"
+            "sourceHash" : "30078700f5a467985aff157345abf5dac44b8550b2aebe7e330032505b7b87df"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x5ae6cc281e9bf69d9393ffb623a01a709bc09b6a208af16ea9487f33130ce8e8",
+                    "hash" : "0x7b4fe12919dd720e8c4ea56ae02c36f8d43f1c851d105328a158af8c2e1740e2",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
