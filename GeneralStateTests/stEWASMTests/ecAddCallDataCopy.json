@@ -2,10 +2,10 @@
     "ecAddCallDataCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/ecAddCallDataCopyFiller.yml",
-            "sourceHash" : "3fac6536623c750ad1a03b9e4bd9232792f166004ed926ff8736b4897d3217ad"
+            "sourceHash" : "b8c3429fe89ba6f611b143d30e417aceb67a54d04a7a735607c00c7a51457982"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x24da719792b1eb72a6252fc1473c1020ca7396a1732735a5c6d2c6a46a658f5b",
+                    "hash" : "0x3ac614643a3a3ef6f4b9170fe1e593db76b38f933bfce9b28a8f1e8f3d875c50",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

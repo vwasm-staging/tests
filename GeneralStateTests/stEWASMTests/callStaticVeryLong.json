@@ -2,8 +2,8 @@
     "callStaticVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callStaticVeryLongFiller.yml",
             "sourceHash" : "c501cb89b250d209789ae8fe27bb6b8756c1ebd59a6a6d761026d255de74d8cd"
         },

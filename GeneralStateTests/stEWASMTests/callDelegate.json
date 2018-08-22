@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDelegateFiller.yml",
-            "sourceHash" : "b05e6d2160b98c67679bd970bb5a62d432b31a1a988095f561674ae431e7e110"
+            "sourceHash" : "4ddbaccff4351e9d41a05722bccc1317f0b8da64ee316bb38315311fa1910b8b"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xa90194f0668e9644f97447b021ef7be8da3af265b3c6699ea9446ac1beb60304",
+                    "hash" : "0xe375c6e1b995a4126cf58d67fb1ee46c1dbb22c6199d4989570676050de8bcf2",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

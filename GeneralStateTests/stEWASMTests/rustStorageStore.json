@@ -2,10 +2,10 @@
     "rustStorageStore" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/rustStorageStoreFiller.yml",
-            "sourceHash" : "3c1d594e365fd0ecda13dcf2668b2765a592cd6f47b4f1e90f772f57d7ae325c"
+            "sourceHash" : "a179aea1c66ad2099a695d67d70355e20cc94d6cbb05103264a5de88ba0a4d67"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x763555c5ac16d05e32eb5e5ad0ee1e93b436a64e41c12395f9ab1dc713e335fa",
+                    "hash" : "0x1e4b95eb0522822354effc896d814d7c9949d03563631df6290812a7ee33af9f",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

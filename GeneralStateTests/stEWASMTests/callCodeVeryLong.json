@@ -2,8 +2,8 @@
     "callCodeVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callCodeVeryLongFiller.yml",
             "sourceHash" : "c658ec8b48b6182a48cd99958f02843bd65ca30436534df1598707157dd2341a"
         },

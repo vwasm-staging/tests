@@ -2,10 +2,10 @@
     "getTxGasPrice" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getTxGasPriceFiller.yml",
-            "sourceHash" : "d67516d6b105b068ebe87ea4588ddc5000b5dce5c023ade26721fe5b3066f32c"
+            "sourceHash" : "1f9f3c41d69299d931d77b5e54dd4ea8e34d3668546c623c6e6421ecdf87b8df"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x6af9cc5f223f9c4b5eaefdccf4febf0e4f0b82a18b5e476762d56631199b76d9",
+                    "hash" : "0xb1fe3a7e7f1765adbe5e64f3d8fcad1ab53cd56cfb72b7f94fd69e517d7c146b",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

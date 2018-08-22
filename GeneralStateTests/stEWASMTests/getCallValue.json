@@ -2,10 +2,10 @@
     "getCallValue" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCallValueFiller.yml",
-            "sourceHash" : "a7b86c1f32ad602e7c09d6791e9d8330929a70c1e4bdbebdb27341595233ffbe"
+            "sourceHash" : "86af5a504661df3612955b581ade564b538f12b3c4a2fc45c61efac6c0c2b660"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xc50e94cce59fd547e5ffab8a540e747fcfbf2815f22f922b9f79d157f8f9056b",
+                    "hash" : "0xcd3a3d8e8f5a1df81533d6181f4668c50bfc6176ca871d50f09f6a1df3410770",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

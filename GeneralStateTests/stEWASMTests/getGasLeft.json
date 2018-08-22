@@ -2,10 +2,10 @@
     "getGasLeft" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getGasLeftFiller.yml",
-            "sourceHash" : "7250f4a98e0a31cf4953b442ec97894aa4fe6502868d7197fe63a2447666c7d8"
+            "sourceHash" : "36a8fbcdd12b7adae2832635777c303befa5dc53c6e40c27e2004dca43daecbb"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x29ab917168e8abe01514c90986316a70e1759e49c62e5c569171bdf278606414",
+                    "hash" : "0x97e1a478b0aa2348c512f7862ff18aed2f5edf38382a6133c651e01cbb816b23",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

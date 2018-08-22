@@ -2,10 +2,10 @@
     "getBlockDifficulty" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockDifficultyFiller.yml",
-            "sourceHash" : "79a47f038e430ae5b3e1645f1cf916319c3522c13d724d8e1fe4a53e4070709d"
+            "sourceHash" : "8bf5357c9a298e19c077b1fcb13eba37958a00f65346ffc5c58cabec019a13db"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x7a319d9a897ff08b190866a8e710d2d82143dabcffb6bfb2a7aa27b7715054b0",
+                    "hash" : "0x08a0b9915f2dba3ef2a2acb54428a33cfb4b36e1428b7874d0b868b09bbcbd5f",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

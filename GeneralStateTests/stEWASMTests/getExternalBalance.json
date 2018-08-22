@@ -2,10 +2,10 @@
     "getExternalBalance" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0.dev1-12+commit.40566e5e",
-            "lllcversion" : "Version: 0.4.25-develop.2018.7.10+commit.f6edb7fb.Linux.g++",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getExternalBalanceFiller.yml",
-            "sourceHash" : "07bf7ac6be6a3e888d9a738c68a9176adab76d55c0276c1d377af033a22047cd"
+            "sourceHash" : "39b8b560a7d41dbaceb83ea7a64aa4e0ad7481410fdc9e8a2cbab3ddd9e67f6d"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0xb02cedfcaa4330531798b02a4a0c7e84a4e5330f35fc008cfa7f96c83cc193b3",
+                    "hash" : "0x4849ef06bb78e913797eaa9a647fa307c60e8d6c07d108ac2ce2b63a543c7731",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

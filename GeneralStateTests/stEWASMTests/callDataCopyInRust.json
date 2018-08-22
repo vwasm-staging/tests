@@ -2,10 +2,10 @@
     "callDataCopyInRust" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc0",
+            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataCopyInRustFiller.yml",
-            "sourceHash" : "ceacf2afac3c1ffe1738e6ee2ae4f37441f6c786621f1abec368145bbf5d2cad"
+            "sourceHash" : "33099fadad909fd1441049671d2ff4753274d3a9936f802f6687b29e6022c7b8"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x8d30637ce125129748c6917b298e44c8de26fe4488195da225b85c54a53a059e",
+                    "hash" : "0xf92d8d87f623af8e7287508e4623437cab778eae40d9859d42c09c5a7ebf09bf",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
