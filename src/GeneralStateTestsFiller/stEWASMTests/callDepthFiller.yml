@@ -1,4 +1,4 @@
-# Test OOB memory read in call.
+# 2 contracts call each other until OOG, $call is called 1072 times
 callDepth:
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
