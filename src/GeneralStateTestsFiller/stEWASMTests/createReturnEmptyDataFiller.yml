@@ -47,13 +47,15 @@ createReturnEmptyData:
         (module
           (import "ethereum" "create" (func $create (param i32 i32 i32 i32) (result i32)))
           (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          (import "ethereum" "externalCodeCopy" (func $externalCodeCopy (param i32 i32 i32 i32)))
+          (import "ethereum" "getExternalCodeSize" (func $getExternalCodeSize (param i32) (result i32)))
           (memory 1)
           ;; Storage keys
           (data (i32.const 0)  "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 0
           (data (i32.const 32) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01") ;; 1
           ;; the inner contract to create
           ;; see WASM source for compiled code, above
-          (data (i32.const 256) "\00\61\73\6d\01\00\00\00\01\09\02\60\02\7f\7f\00\60\00\00\02\13\01\08\65\74\68\65\72\65\75\6d\06\66\69\6e\69\73\68\00\00\03\02\01\01\05\03\01\00\01\07\11\02\06\6d\65\6d\6f\72\79\02\00\04\6d\61\69\6e\00\01\0a\15\01\13\01\02\7f\41\80\04\21\00\41\00\21\01\20\00\20\01\10\00\0b")
+          (data (i32.const 224) "\a0\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\01")
 
           (export "memory" (memory 0))
           (export "main" (func $main))
@@ -62,6 +64,7 @@ createReturnEmptyData:
             ;; locals
             (local $codeMemLoc i32)
             (local $codeLen i32)
+            (local $addrPtr i32)
             (local $memPointerStorageKey1 i32)
             (local $memPointerStorageKey2 i32)
             (local $memPointerCreateValue i32)
@@ -69,7 +72,7 @@ createReturnEmptyData:
 
             ;; Location and length of code stored in (data) section above
             (set_local $codeMemLoc (i32.const 256))
-            (set_local $codeLen (i32.const 91))
+            (set_local $addrPtr (i32.const 224))
 
             ;; memory layout and pointers
             (set_local $memPointerStorageKey1 (i32.const 0))
@@ -80,6 +83,16 @@ createReturnEmptyData:
             ;; initialize
             ;; call create with value transfer 0x1234
             (i32.store (get_local $memPointerCreateValue) (i32.const 0x1234))
+
+            ;; get the external wasm bytecode
+            (set_local $codeLen
+              (call $getExternalCodeSize (get_local $addrPtr)))
+
+            (call $externalCodeCopy
+               (get_local $addrPtr)      ;; address
+               (get_local $codeMemLoc)   ;; result
+               (i32.const 0)             ;; code offset
+               (get_local $codeLen))     ;; length
 
             ;; call CREATE and store the return success/failure value
             (call $storageStore
@@ -112,7 +125,7 @@ createReturnEmptyData:
         - ALL
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99999922000'
+          balance: '99999920591'
         deadbeef00000000000000000000000000000000:
           storage: {
             # Expect CREATE to return success
