@@ -15,67 +15,9 @@ callSenderBalanceExceeds128Bits:
       storage: {}
     deadbeef00000000000000000000000000000001:
       balance: 100000000000
+      code: ''
       nonce: ''
       storage: {}
-      code: |
-        (module
-          (import "ethereum" "getCallDataSize" (func $getCallDataSize (result i32)))
-          (import "ethereum" "callDataCopy" (func $callDataCopy (param i32 i32 i32)))
-          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
-          (memory 1)
-          ;; init mem
-          (data (i32.const 128) "\0a\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 10
-          (data (i32.const 160) "\0b\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00") ;; 11
-          (export "memory" (memory 0))
-          (export "main" (func $main))
-
-          (func $main
-            ;; locals
-            (local $memStart i32)
-            (local $callDataSize i32)
-            (local $ptrStorageKey10 i32)
-            (local $ptrStorageKey11 i32)
-            (local $ptrCallData i32)
-            (local $ptrCallDataSize i32)
-
-            ;; init
-            (set_local $memStart (i32.const 128))
-
-            ;; init pointers
-            (set_local $ptrStorageKey10 (get_local $memStart))
-            (set_local $ptrStorageKey11 (i32.add (get_local $memStart) (i32.const 32)))
-            (set_local $ptrCallData (i32.add (get_local $memStart) (i32.const 64)))
-            (set_local $ptrCallDataSize (i32.add (get_local $memStart) (i32.const 96)))
-
-            ;; get call data size
-            (set_local $callDataSize (call $getCallDataSize))
-
-            ;; write it to mem (so we can store it)
-            (i32.store (get_local $ptrCallDataSize) (get_local $callDataSize))
-
-            ;; store it
-            (call $storageStore
-              (get_local $ptrStorageKey10)
-              (get_local $ptrCallDataSize)
-            )
-
-            ;; get call data
-            (call $callDataCopy
-              ;; result offset
-              (get_local $ptrCallData)
-              ;; data offset
-              (i32.const 0)
-              ;; length
-              (get_local $callDataSize)
-            )
-
-            ;; store call data
-            (call $storageStore
-              (get_local $ptrStorageKey11)
-              (get_local $ptrCallData)
-            )
-          )
-        )
     deadbeef00000000000000000000000000000000:
       balance: 340282366920938463463374607431768211600
       nonce: ''
@@ -152,17 +94,12 @@ callSenderBalanceExceeds128Bits:
         deadbeef00000000000000000000000000000000:
           balance: 340282366920938463463374607431768211600
           storage: {
-            # Expect success from CALL
+            # Nothing should be store due to InternalError
             1: "0"
           }
         deadbeef00000000000000000000000000000001:
-          storage: {
-            # Length of received data
-            10: "0",
-            # Received data
-            11: ""
-          }
           balance: 100000000000
+          storage: {}
   transaction:
     data:
     - '0x'
