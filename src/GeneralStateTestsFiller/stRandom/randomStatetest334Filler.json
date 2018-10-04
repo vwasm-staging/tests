@@ -15,14 +15,14 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : ["Frontier", "Homestead"],
+                "network" : [">=Byzantium", "Homestead"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "916012823",
                         "code" : "0x7f00000000000000000000000000000000000000000000000000000000000000013a7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe6f424468208e181851308b7c7a776863a160005155",
                         "nonce" : "0",
                         "storage" : {
-                            "0x" : "0x424468208e181851308b7c7a776863a1"
+                            "0x00" : "0x424468208e181851308b7c7a776863a1"
                         }
                     },
                     "945304eb96065b2a98b57a48a06ae28d285a71b5" : {

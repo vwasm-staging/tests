@@ -95,11 +95,11 @@
             {
                 "indexes": {
                     "data": 0,
-                    "gas": 0,
+                    "gas": -1,
                     "value": 0
                 },
                 "network": [
-                    "Byzantium"
+                    ">=Byzantium"
                 ],
                 "result": {
                     "0000000000000000000000000000000000000001": {

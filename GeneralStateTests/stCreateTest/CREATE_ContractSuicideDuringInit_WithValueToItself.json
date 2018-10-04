@@ -2,10 +2,10 @@
     "CREATE_ContractSuicideDuringInit_WithValueToItself" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "cpp-1.3.0+commit.6e0ce939.Linux.g++",
-            "lllcversion" : "Version: 0.4.18-develop.2017.9.25+commit.a72237f2.Linux.g++",
+            "filledwith" : "cpp-1.3.0+commit.6a813f04.Linux.g++",
+            "lllcversion" : "Version: 0.4.22-develop.2018.3.16+commit.2b2527f3.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stCreateTest/CREATE_ContractSuicideDuringInit_WithValueToItselfFiller.json",
-            "sourceHash" : "d43b9daa84505bf42def846e940798d9c01b7151cc9147a6030ed3ff6cc027e0"
+            "sourceHash" : "a2c42e8d0f8bec45eb04f76224d79519a8b91a3079d1b823d42204b4198206ad"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -17,6 +17,17 @@
         },
         "post" : {
             "Byzantium" : [
+                {
+                    "hash" : "0x7cd0af0907df25d710cfcfe805b74940f69be3945f08318cce347245199fe023",
+                    "indexes" : {
+                        "data" : 0,
+                        "gas" : 0,
+                        "value" : 0
+                    },
+                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347"
+                }
+            ],
+            "Constantinople" : [
                 {
                     "hash" : "0x7cd0af0907df25d710cfcfe805b74940f69be3945f08318cce347245199fe023",
                     "indexes" : {
