@@ -1,5 +1,5 @@
-# Test malformed bytecode (no main) in init on create
-initMalformedBytecodeNoMain:
+# Test malformed bytecode (has start) in init on create
+initMalformedBytecodeHasStart:
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: '0x020000'

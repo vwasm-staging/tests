@@ -1,11 +1,11 @@
 {
-    "initMalformedBytecodeNoMain" : {
+    "initMalformedBytecodeHasStart" : {
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
-            "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeNoMainFiller.yml",
-            "sourceHash" : "f17ace063abb977049e8157544752da3ff07568b2189ecae991a6087a139a6c0"
+            "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeHasStartFiller.yml",
+            "sourceHash" : "f0387d272d2bca92b72928765acbdf844e4d83a6e7725e73fc2bc93ee6892700"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
