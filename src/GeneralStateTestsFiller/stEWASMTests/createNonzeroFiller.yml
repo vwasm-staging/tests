@@ -133,6 +133,7 @@ createNonzero:
             (local $memPointerCreateResult i32)
             (local $memPointerZero i32)
             (local $memPointerStorageKey3 i32)
+            (local $memPointerCreateReturnVal i32)
             (local $memPointerAddress i32)
 
             ;; Location and length of code stored in (data) section above
@@ -146,6 +147,7 @@ createNonzero:
             (set_local $memPointerCreateResult (i32.const 96))
             (set_local $memPointerZero (i32.const 128))
             (set_local $memPointerStorageKey3 (i32.const 160))
+            (set_local $memPointerCreateReturnVal (i32.const 192))
             (set_local $memPointerAddress (i32.const 389))
 
             (i32.store (get_local $codeLen)
@@ -163,8 +165,8 @@ createNonzero:
             (i32.store (get_local $memPointerCreateValue) (i32.const 0x1234))
 
             ;; call CREATE and store the return success/failure value
-            (call $storageStore
-              (get_local $memPointerStorageKey1)
+            (i32.store
+              (get_local $memPointerCreateReturnVal)
               (call $create
                 ;; value offset
                 (get_local $memPointerCreateValue)
@@ -175,6 +177,11 @@ createNonzero:
                 ;; result offset (new contract address)
                 (get_local $memPointerCreateResult)
               )
+            )
+
+            (call $storageStore
+              (get_local $memPointerStorageKey1)
+              (get_local $memPointerCreateReturnVal)
             )
 
             ;; store the result (new contract address)
