@@ -15,17 +15,17 @@ initMalformedBytecodeNoMain:
       nonce: ''
       storage: {}
     # WASM source for compiled code, below:
-    a000000000000000000000000000000000000001:
-      balance: '0'
-      nonce: ''
-      storage: {}
-      code: |
-        (module
-          (import "ethereum" "finish" (func $finish (param i32 i32)))
-          (memory 1)
-          (export "memory" (memory 0))
-          ;; no "main" export or definition
-        )
+    # a000000000000000000000000000000000000001:
+    #   balance: '0'
+    #   nonce: ''
+    #   storage: {}
+    #   code: |
+    #     (module
+    #       (import "ethereum" "finish" (func $finish (param i32 i32)))
+    #       (memory 1)
+    #       (export "memory" (memory 0))
+    #       ;; no "main" export or definition
+    #     )
     # main contract, tx receiver
     abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd:
       balance: '100000000000'
