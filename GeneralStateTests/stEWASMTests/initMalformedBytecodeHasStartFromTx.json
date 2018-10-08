@@ -5,7 +5,7 @@
             "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeHasStartFromTxFiller.yml",
-            "sourceHash" : "77bffa46d147834ba5a0b055da8946037706a34defd2da05e90dc65868b4f613"
+            "sourceHash" : "689ee2ed2ad8dd57727eca547e9917a0c97387875f5011a7e9af020d13f14153"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

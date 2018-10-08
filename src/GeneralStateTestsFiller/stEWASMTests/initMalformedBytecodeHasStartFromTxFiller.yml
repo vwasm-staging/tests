@@ -26,8 +26,8 @@ initMalformedBytecodeHasStartFromTx:
           balance: '99916113919'
         # newly-created contract
         # expect code to be empty since create should fail
-        # 6295ee1b4f6dd65047762f924ecd367c17eabf8f:
-        #   code: ''
+        6295ee1b4f6dd65047762f924ecd367c17eabf8f:
+          shouldnotexist: 1
   transaction:
     data: 
     - |
