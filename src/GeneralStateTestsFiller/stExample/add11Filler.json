@@ -15,13 +15,13 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : ["ALL"],
+                "network" : [">=Frontier"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "1000000000000100000",
                         "code" : "0x6001600101600055",
                         "storage" : {
-                            "0x" : "0x02"
+                            "0x00" : "0x02"
                         }
                     },
                     "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba" : {
@@ -44,6 +44,7 @@
         "pre" : {
             "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                 "balance" : "1000000000000000000",
+		"//code" : "{ [[ 0 ]] (ADD 1 1) }",
                 "code" : "0x6001600101600055",
                 "nonce" : "0",
                 "storage" : {

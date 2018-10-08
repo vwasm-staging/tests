@@ -13,12 +13,11 @@
                 "indexes" : {
                     "data" : 1,
                     "gas" : 1,
-                    "value" : 0
+                    "value" : -1
                 },
-                "network" : ["Frontier", "Homestead", "EIP150", "EIP158"],
+                "network" : [">Frontier"],
                 "result" : {
 		    "3e180b1862f9d158abb5e519a6d8605540c23682" : {
-		        "balance" : "0x05",
                         "code" : "0x60016000556000600060006000600073b000000000000000000000000000000000000000600035f1600155600c600455",
                         "nonce" : "54",
                         "storage" : {
@@ -35,12 +34,11 @@
                 "indexes" : {
                     "data" : 0,
                     "gas" : 1,
-                    "value" : 0
+                    "value" : -1
                 },
-                "network" : ["ALL"],
+                "network" : [">Frontier"],
                 "result" : {
                     "3e180b1862f9d158abb5e519a6d8605540c23682" : {
-                        "balance" : "0x06",
                         "code" : "{ [[0]] 1 [[1]] (CALL (CALLDATALOAD 0) 0xb000000000000000000000000000000000000000 0 0 0 0 0) [[4]] 12 }",
                         "nonce" : "54",
                         "storage" : {
@@ -59,9 +57,9 @@
                 "indexes" : {
                     "data" : 1,
                     "gas" : 0,
-                    "value" : 0
+                    "value" : -1
                 },
-                "network" : ["EIP158", "EIP150"],
+                "network" : [">=EIP158", "EIP150"],
                 "result" : {
                     "3e180b1862f9d158abb5e519a6d8605540c23682" : {
                         "balance" : "0x05",
@@ -81,12 +79,11 @@
                 "indexes" : {
                     "data" : 1,
                     "gas" : 0,
-                    "value" : 0
+                    "value" : -1
                 },
                 "network" : ["Homestead", "Frontier"],
                 "result" : {
                     "3e180b1862f9d158abb5e519a6d8605540c23682" : {
-                        "balance" : "0x05",
                         "code" : "0x60016000556000600060006000600073b000000000000000000000000000000000000000600035f1600155600c600455",
                         "nonce" : "54",
                         "storage" : {
@@ -103,12 +100,11 @@
                 "indexes" : {
                     "data" : 0,
                     "gas" : 0,
-                    "value" : 0
+                    "value" : -1
                 },
-                "network" : ["ALL"],
+                "network" : [">Frontier"],
                 "result" : {
                     "3e180b1862f9d158abb5e519a6d8605540c23682" : {
-                        "balance" : "0x05",
                         "code" : "{ [[0]] 1 [[1]] (CALL (CALLDATALOAD 0) 0xb000000000000000000000000000000000000000 0 0 0 0 0) [[4]] 12 }",
                         "nonce" : "54",
                         "storage" : {
@@ -146,8 +142,8 @@
             }
         },
         "transaction" : {
-	    "data" : "Call with value to address A, then another call X, in the call X CREATE of account A, OOG -> revert call X.",
-	    "data" : "d0g0 - double OOG,  d0g1 - OOG inside subcall, d1g0 - OOG after subcall, d1g1 - no OOG",
+	    "//0 data" : "Call with value to address A, then another call X, in the call X CREATE of account A, OOG -> revert call X.",
+	    "//1 data" : "d0g0 - double OOG,  d0g1 - OOG inside subcall, d1g0 - OOG after subcall, d1g1 - no OOG",
             "data" : [
 		"0x000000000000000000000000000000000000000000000000000000000000ea60", 
 		"0x000000000000000000000000000000000000000000000000000000000001ea60" 

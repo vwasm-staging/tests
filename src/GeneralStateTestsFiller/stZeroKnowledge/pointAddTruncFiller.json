@@ -15,7 +15,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Frontier", "Homestead", "EIP150", "EIP158"],
+                "network" : ["Homestead"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -26,13 +26,27 @@
 		    }
                 }
             },
+	    {
+                "indexes" : {
+                    "data" : -1,
+                    "gas" : [1,2,3],
+                    "value" : -1
+                },
+                "network" : ["Homestead"],
+                "result" : {
+		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+			"storage" : {
+			}
+		    }
+                }
+            },
             {
                 "indexes" : {
                     "data" : [0],
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -49,7 +63,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -66,7 +80,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -83,7 +97,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -100,7 +114,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -117,7 +131,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -134,7 +148,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -151,7 +165,7 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
@@ -168,13 +182,60 @@
                     "gas" : 0,
                     "value" : -1
                 },
-                "network" : ["Byzantium"],
+                "network" : [">=Byzantium"],
                 "result" : {
 		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 			"storage" : {
 			    "0x00" : "0x01",
                             "0x01" : "0x0f25929bcb43d5a57391564615c9e70a992b10eafa4db109709649cf48c50dd2",
                             "0x02" : "0x16da2f5cb6be7a0aa72c440c53c9bbdfec6c36c7d515536431b3a865468acbba"
+			}
+		    }
+                }
+            },
+	    {
+                "indexes" : {
+                    "data" : [2,3,7,8,9],
+                    "gas" : [2,3],
+                    "value" : -1
+                },
+                "network" : [">=Byzantium"],
+                "result" : {
+		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+			"storage" : {
+			    "0x00" : "0x01",
+			    "0x01" : "0x0f25929bcb43d5a57391564615c9e70a992b10eafa4db109709649cf48c50dd2",
+			    "0x02" : "0x16da2f5cb6be7a0aa72c440c53c9bbdfec6c36c7d515536431b3a865468acbba"
+			}
+		    }
+                }
+            },
+	    {
+                "indexes" : {
+                    "data" : [5,6],
+                    "gas" : [1,2,3],
+                    "value" : -1
+                },
+                "network" : [">=Byzantium"],
+                "result" : {
+		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+			"storage" : {
+			    
+			}
+		    }
+                }
+            },
+	    {
+                "indexes" : {
+                    "data" : [7,8],
+                    "gas" : [1],
+                    "value" : -1
+                },
+                "network" : [">=Byzantium"],
+                "result" : {
+		    "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+			"storage" : {
+			    
 			}
 		    }
                 }
@@ -197,7 +258,7 @@
             }
         },
         "transaction" : {
-	    "data" : [
+	    "// data" : [
 		"(1,2) + (1,2)",
 		"(0,0) + (0,0)",
 		"(x,x) + (invalid)",
