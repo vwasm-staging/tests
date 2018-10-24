@@ -1,11 +1,11 @@
 {
-    "validateECI" : {
+    "storedMalformedBytecodeHasStartFromTx" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc6+commit.d7e94caa.dirty",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
-            "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateECIFiller.yml",
-            "sourceHash" : "631d4490fd7e25408bd41f82456cdab98af943a867b4aed53df2f1ead199bd7b"
+            "source" : "src/GeneralStateTestsFiller/stEWASMTests/storedMalformedBytecodeHasStartFromTxFiller.yml",
+            "sourceHash" : "13c2545e9978c4c65333994041d9ee2dffd40a719a50018b9c71f020caebebe0"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
