@@ -2,10 +2,10 @@
     "createNotEnoughBalance" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc6+commit.d7e94caa.dirty",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createNotEnoughBalanceFiller.yml",
-            "sourceHash" : "19253383b0da9775505a2639ceff97c98415ce7d1394da00927785e9bef278fd"
+            "sourceHash" : "d03b90c1518417a36a196d64ae75aab00c0933732b9e83a377e426a8b4d0b6a7"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -18,7 +18,7 @@
         "post" : {
             "Byzantium" : [
                 {
-                    "hash" : "0x3f22827ef2feae7531c843b6efd485451e2b60fe7f6a1d290255a6e1caa27f67",
+                    "hash" : "0xb7cd02e30c0f85fdda36c90a142932b482308f753d87359988fd564fc401f5f0",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,

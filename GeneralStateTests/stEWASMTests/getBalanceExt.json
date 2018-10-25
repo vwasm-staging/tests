@@ -2,7 +2,7 @@
     "getBalanceExt" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBalanceExtFiller.yml",
             "sourceHash" : "603a93c9e962e0453a2144ac316de794b7f13d0d1b3400e64e1c836cb4429131"

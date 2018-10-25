@@ -2,7 +2,7 @@
     "malformedBytecodeInvalidPreamble" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedBytecodeInvalidPreambleFiller.yml",
             "sourceHash" : "fea2a0694799139f5556abc9b043b4b9e5b2a426d11071064fe890c64764f7f7"

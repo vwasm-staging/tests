@@ -2,7 +2,7 @@
     "createCodeWithRevert" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc5",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createCodeWithRevertFiller.yml",
             "sourceHash" : "c8440fc6c8140c955fad41b963b1126ce0d7f5fe7028c37e9229ff89396258a4"

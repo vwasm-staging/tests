@@ -2,7 +2,7 @@
     "createFromTransaction" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0+commit.76137f83.dirty",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFromTransactionFiller.yml",
             "sourceHash" : "951980c66be9f521aa09ceaeae13701aa6b6bfc25944254ba2d63d6f5247cabc"

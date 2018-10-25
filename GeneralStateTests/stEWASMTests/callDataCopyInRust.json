@@ -2,7 +2,7 @@
     "callDataCopyInRust" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataCopyInRustFiller.yml",
             "sourceHash" : "33099fadad909fd1441049671d2ff4753274d3a9936f802f6687b29e6022c7b8"

@@ -2,7 +2,7 @@
     "callDataCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataCopyFiller.yml",
             "sourceHash" : "7751fa84c00f634c49c7a1605ae1e9cdbe58f44252029dce5195111b4238e683"

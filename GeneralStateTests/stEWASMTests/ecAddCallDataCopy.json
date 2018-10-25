@@ -2,7 +2,7 @@
     "ecAddCallDataCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/ecAddCallDataCopyFiller.yml",
             "sourceHash" : "b8c3429fe89ba6f611b143d30e417aceb67a54d04a7a735607c00c7a51457982"

@@ -2,7 +2,7 @@
     "callDelegate" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDelegateFiller.yml",
             "sourceHash" : "4ddbaccff4351e9d41a05722bccc1317f0b8da64ee316bb38315311fa1910b8b"

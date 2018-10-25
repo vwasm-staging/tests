@@ -2,7 +2,7 @@
     "callCode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callCodeFiller.yml",
             "sourceHash" : "b13f025b62717a00c76f6a3297fba0017894f9fada0d6b53702055c991b6a841"

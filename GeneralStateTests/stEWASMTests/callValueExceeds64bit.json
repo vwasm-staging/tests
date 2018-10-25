@@ -2,7 +2,7 @@
     "callValueExceeds64bit" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callValueExceeds64bitFiller.yml",
             "sourceHash" : "882df8f3c81d4ac148bf72285b0c910e644fd37f7253cf0e89a588b5a39ccf1d"

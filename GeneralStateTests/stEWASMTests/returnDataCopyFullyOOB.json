@@ -2,7 +2,7 @@
     "returnDataCopyFullyOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnDataCopyFullyOOBFiller.yml",
             "sourceHash" : "40bb72614f0c624825b7974ab741009a5c763bea33a39cbd0c0e35bdba8ce692"

@@ -2,7 +2,7 @@
     "returnDataCopyTooLongOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnDataCopyTooLongOOBFiller.yml",
             "sourceHash" : "79bf734083513ee07d878e957993bd6a69c3a1ee0e32238cdc77731a37a4212d"

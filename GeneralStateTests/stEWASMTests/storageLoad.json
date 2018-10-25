@@ -2,7 +2,7 @@
     "storageLoad" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/storageLoadFiller.yml",
             "sourceHash" : "8cb5c5cbe3c9765dbc8d95b82aa5464aaf67d119597d9393bdcac28144761308"

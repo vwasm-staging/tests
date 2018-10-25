@@ -2,7 +2,7 @@
     "logTopicVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/logTopicVeryLongFiller.yml",
             "sourceHash" : "1b8c71fd383ad7a9149587374681c7f771d51b7d58672b3bced1044e4b352083"

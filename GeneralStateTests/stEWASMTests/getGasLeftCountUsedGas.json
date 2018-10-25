@@ -2,7 +2,7 @@
     "getGasLeftCountUsedGas" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getGasLeftCountUsedGasFiller.yml",
             "sourceHash" : "82eaefc333016518bf0443663eaa26560f33db2ec5e45a535bd46a12c0e93ee5"

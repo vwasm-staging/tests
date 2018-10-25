@@ -2,7 +2,7 @@
     "logTopicsOverflow" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/logTopicsOverflowFiller.yml",
             "sourceHash" : "9c528e6bf6cddd4e64e986b9d547c3cf0f1770c8832f858dc48d2d8c2c3b4eef"

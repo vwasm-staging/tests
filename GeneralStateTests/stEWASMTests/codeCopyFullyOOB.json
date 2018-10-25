@@ -2,7 +2,7 @@
     "codeCopyFullyOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/codeCopyFullyOOBFiller.yml",
             "sourceHash" : "2b1bb046e91a384f671618f8830a8bab9e068330a5b9e345fba2a1a04154e3f5"

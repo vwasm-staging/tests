@@ -2,7 +2,7 @@
     "extCodeCopyFullyOOB" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/extCodeCopyFullyOOBFiller.yml",
             "sourceHash" : "59246a6a2f81bdb41355f44f6fe22e4a5541d6605e823e17688c36c2ea4fd321"

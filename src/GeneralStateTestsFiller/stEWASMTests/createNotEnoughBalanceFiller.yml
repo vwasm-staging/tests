@@ -103,8 +103,10 @@ createNotEnoughBalance:
       network:
         - ALL
       result:
+        # initialBalance - getExternalCodeSize - externalCodeCopy - create - txCost
+        # 100000000000   - 700                 - 718              - 32000  - 21000  = 99999945582
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: '99999977582'
+          balance: '99999945582'
         deadbeef00000000000000000000000000000000:
           storage: {
           }

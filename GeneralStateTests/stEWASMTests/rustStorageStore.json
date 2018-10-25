@@ -2,7 +2,7 @@
     "rustStorageStore" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/rustStorageStoreFiller.yml",
             "sourceHash" : "a179aea1c66ad2099a695d67d70355e20cc94d6cbb05103264a5de88ba0a4d67"

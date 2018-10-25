@@ -2,7 +2,7 @@
     "getCallValue" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCallValueFiller.yml",
             "sourceHash" : "86af5a504661df3612955b581ade564b538f12b3c4a2fc45c61efac6c0c2b660"
