@@ -2,8 +2,8 @@
     "wasmDivisionByZero" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc5",
-            "lllcversion" : "Error getting LLLC Version",
+            "filledwith" : "testeth 1.4.0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/wasmDivisionByZeroFiller.yml",
             "sourceHash" : "9311cbfa308a228552211415e62da1d7aca852f4ff10cde8afa7845d8738b44d"
         },

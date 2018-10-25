@@ -2,7 +2,7 @@
     "callVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callVeryLongFiller.yml",
             "sourceHash" : "77d9bf8a9480ff181f231f2e61e695771ee9e48044a31859d23574f68f9b502f"

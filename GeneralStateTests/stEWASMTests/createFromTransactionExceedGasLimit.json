@@ -2,7 +2,7 @@
     "createFromTransactionExceedGasLimit" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFromTransactionExceedGasLimitFiller.yml",
             "sourceHash" : "373d643bbe5ed3edb9abf8134c8b0acb65604641c785e5c332d77a1689ce0367"

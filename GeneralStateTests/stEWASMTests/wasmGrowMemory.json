@@ -2,8 +2,8 @@
     "wasmGrowMemory" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc5",
-            "lllcversion" : "Error getting LLLC Version",
+            "filledwith" : "testeth 1.4.0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/wasmGrowMemoryFiller.yml",
             "sourceHash" : "fe1b74e604b2f6902020f736ce7e6c4326ae9607c6539c1dbef7c4c5cbe21bb2"
         },

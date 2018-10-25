@@ -2,7 +2,7 @@
     "callDataValue" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDataValueFiller.yml",
             "sourceHash" : "1f9b9ead3dcbbc6b3fc1ef21438b3eec8e4218b3dd4c5ca78aab4561c7a790cb"

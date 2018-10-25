@@ -2,7 +2,7 @@
     "getCaller" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCallerFiller.yml",
             "sourceHash" : "62dd1d5ca21ae42f97070b7b03cd1a1cecb65fe8a27a97bbe2536ec5912d4ee3"

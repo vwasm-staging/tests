@@ -2,7 +2,7 @@
     "deepInvalidMemoryAccess" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/deepInvalidMemoryAccessFiller.yml",
             "sourceHash" : "d4d3b6d6bc0ec9b55b5fcce8977b807020870f5ab51cd63d81afeefc4544d332"

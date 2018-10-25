@@ -2,7 +2,7 @@
     "getBlockNumber002" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockNumber002Filler.yml",
             "sourceHash" : "30078700f5a467985aff157345abf5dac44b8550b2aebe7e330032505b7b87df"

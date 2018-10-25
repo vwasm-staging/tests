@@ -2,7 +2,7 @@
     "revertVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/revertVeryLongFiller.yml",
             "sourceHash" : "0895142c29fd6160fad2b5beab65ea0c2f07888151a71e7feec6aec9c8130b0c"

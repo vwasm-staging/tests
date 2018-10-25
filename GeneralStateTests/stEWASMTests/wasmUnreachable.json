@@ -2,8 +2,8 @@
     "wasmUnreachable" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc5",
-            "lllcversion" : "Error getting LLLC Version",
+            "filledwith" : "testeth 1.4.0",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/wasmUnreachableFiller.yml",
             "sourceHash" : "4ac1076868c1650c4bef4352d49b1146a9b7d9e75ba75e6e937dcbe215eab30c"
         },

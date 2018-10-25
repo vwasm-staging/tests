@@ -2,7 +2,7 @@
     "getBlockDifficulty" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockDifficultyFiller.yml",
             "sourceHash" : "8bf5357c9a298e19c077b1fcb13eba37958a00f65346ffc5c58cabec019a13db"

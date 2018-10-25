@@ -2,7 +2,7 @@
     "createOOB2" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createOOB2Filler.yml",
             "sourceHash" : "5f35d2b2c5df6cae76aefadff0e04e1a941332512585b42c1277a284b0e0611c"

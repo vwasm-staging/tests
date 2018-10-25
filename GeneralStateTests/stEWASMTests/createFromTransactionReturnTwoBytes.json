@@ -2,7 +2,7 @@
     "createFromTransactionReturnTwoBytes" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFromTransactionReturnTwoBytesFiller.yml",
             "sourceHash" : "51251006f25c4fe39f5ab3c1d7e03f80568f0466fbdeae07b9457d7141e2e009"

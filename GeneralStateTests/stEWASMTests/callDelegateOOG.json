@@ -2,7 +2,7 @@
     "callDelegateOOG" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDelegateOOGFiller.yml",
             "sourceHash" : "e87ae47c54b8c59360a14da441f954e54e68a34f4568c6c68dec3ca090bea8bc"

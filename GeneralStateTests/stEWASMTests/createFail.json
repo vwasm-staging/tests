@@ -2,7 +2,7 @@
     "createFail" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc6+commit.d7e94caa.dirty",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFailFiller.yml",
             "sourceHash" : "42b84584993d4d3d9b3527d054b011255bdf899fc31fa08f74cc1b9c3c6c94a6"

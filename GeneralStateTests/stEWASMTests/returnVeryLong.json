@@ -2,7 +2,7 @@
     "returnVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnVeryLongFiller.yml",
             "sourceHash" : "d73ea985a828e92029abad3f698dfcb5dbd57a6d0d30caecac9348dc98e9bf5c"

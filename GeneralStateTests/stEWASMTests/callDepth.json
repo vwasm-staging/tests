@@ -2,7 +2,7 @@
     "callDepth" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callDepthFiller.yml",
             "sourceHash" : "471fa38d68940b8184e18d751f9ea7e4344d59cb0491f9de4a58e51d98074c7c"

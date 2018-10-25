@@ -2,7 +2,7 @@
     "getAddress" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getAddressFiller.yml",
             "sourceHash" : "91aefff5536b56cc58c4a1487b33f79626096d32a37771babf56774838b486fd"

@@ -2,7 +2,7 @@
     "callValueInStaticMode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0rc3-18+commit.3173b1d1",
+            "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callValueInStaticModeFiller.yml",
             "sourceHash" : "5cb054c0345cb0a1f11c3302461e46b8e7ea9831bd0fbb3af009ca7620cacf66"
