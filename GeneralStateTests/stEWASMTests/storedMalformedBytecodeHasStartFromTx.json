@@ -3,9 +3,9 @@
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/storedMalformedBytecodeHasStartFromTxFiller.yml",
-            "sourceHash" : "13c2545e9978c4c65333994041d9ee2dffd40a719a50018b9c71f020caebebe0"
+            "sourceHash" : "2993bd8bd3dc94475c65a193fd7372aa3d8412de641b19aaad3a0d87d1076a63"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
