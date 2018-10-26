@@ -30,7 +30,7 @@ validateBytecodeMissingVersionTwoBytesFromTxIsInvalid:
           shouldnotexist: 1
   transaction:
     data: [
-      # Wasm magic (0061736d) with only one byte for version number
+      # Wasm magic (0061736d) with only two bytes for version number
       "0x0061736d0100"
     ]
     gasLimit:
