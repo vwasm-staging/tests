@@ -1,11 +1,11 @@
 {
-    "validateBytecodeMissingVersionTwoBytesFromTxIsInvalid" : {
+    "validateBytecodeMissingVersionOneByteFromTxIsInvalid" : {
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.4.0",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
-            "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeMissingVersionTwoBytesFromTxIsInvalidFiller.yml",
-            "sourceHash" : "6003c62c32830bbc19fc21841ca22287e782d9ff88fddda038fe2fa5d9b806fb"
+            "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeMissingVersionOneByteFromTxIsInvalidFiller.yml",
+            "sourceHash" : "e01f697f52fa682bccd64746c5892a6917272f0b7b78d3d44010fdd24aafc44a"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -39,7 +39,7 @@
         },
         "transaction" : {
             "data" : [
-                "0x0061736d0100"
+                "0x0061736d01"
             ],
             "gasLimit" : [
                 "0x5000001"
