@@ -2,10 +2,10 @@
     "codeSizeGreaterThanMax" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/codeSizeGreaterThanMaxFiller.yml",
-            "sourceHash" : "0a4a6ccc6faf4e2e2c4cbd6d89bed43ca830bba7a591ba575e21816fc085025d"
+            "sourceHash" : "baa092780206ea9d33323e1c56ca03dd5d8585de7688b0241774ee50e2076fb1"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

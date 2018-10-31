@@ -2,10 +2,10 @@
     "validateBytecodeMissingVersionTwoBytesFromTxIsInvalid" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeMissingVersionTwoBytesFromTxIsInvalidFiller.yml",
-            "sourceHash" : "6003c62c32830bbc19fc21841ca22287e782d9ff88fddda038fe2fa5d9b806fb"
+            "sourceHash" : "83b9a0f72dcf12f298eb2ffec60d576cd74477725309acc37e2ec28be0d71594"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

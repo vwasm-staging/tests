@@ -2,10 +2,10 @@
     "getBlockCoinbase" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockCoinbaseFiller.yml",
-            "sourceHash" : "2609119419aaf0eae574b7bc9247163787930b213352eec611e15c625e87029f"
+            "sourceHash" : "36b4f346518c0f607f0da2daf7f91d21ed1d7eb4884b1ddbb790416bac7da4b3"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

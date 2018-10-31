@@ -2,10 +2,10 @@
     "getCodeSize" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCodeSizeFiller.yml",
-            "sourceHash" : "78bddd766043b82a775aa9164320c256b2afc4194413be38cf3b0e20439cafbb"
+            "sourceHash" : "85a9f73458977fbaaf55ee7087530c38f5fbd7c8606b76d16becac439a200429"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

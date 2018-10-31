@@ -2,10 +2,10 @@
     "getCallDataSize" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getCallDataSizeFiller.yml",
-            "sourceHash" : "edd0743e868fbf904de7d97c1c8812ee518a98274dafb7b6c336703a3c917be8"
+            "sourceHash" : "5a2c2e4830a064f98d78ef8be27a9a5f5216bb827350cb9b1277f1a12130605e"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

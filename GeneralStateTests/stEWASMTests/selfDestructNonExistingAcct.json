@@ -2,10 +2,10 @@
     "selfDestructNonExistingAcct" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/selfDestructNonExistingAcctFiller.yml",
-            "sourceHash" : "f6d72f61c8b58bd1a5edbe12877163b814795aa40542fe7a7448f421f78ae85c"
+            "sourceHash" : "48bca63c744cb8abb4e679a18f7f5ac0bf65b560d1f3bf80abd42a694bbae959"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

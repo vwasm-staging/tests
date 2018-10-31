@@ -2,10 +2,10 @@
     "validateBytecodeInvalidImportFromTxIsInvalid" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.5.0-alpha.4",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeInvalidImportFromTxIsInvalidFiller.yml",
-            "sourceHash" : "b13dbd33e47b683e7cce937674c92e87ae9b5524f6bc5516afebe7ad7c160fdb"
+            "sourceHash" : "24f279fdc092fda913fc5e6e66c8d784a4fab535e0ac8ce84e55d68361cfc785"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

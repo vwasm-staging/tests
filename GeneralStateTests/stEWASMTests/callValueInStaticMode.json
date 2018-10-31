@@ -2,10 +2,10 @@
     "callValueInStaticMode" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callValueInStaticModeFiller.yml",
-            "sourceHash" : "5cb054c0345cb0a1f11c3302461e46b8e7ea9831bd0fbb3af009ca7620cacf66"
+            "sourceHash" : "6638a339aff13489e28d8c61d5118965c4e3b0eced3aafd186307a22e1389fc8"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
