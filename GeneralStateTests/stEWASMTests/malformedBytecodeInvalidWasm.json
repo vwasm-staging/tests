@@ -2,10 +2,10 @@
     "malformedBytecodeInvalidWasm" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedBytecodeInvalidWasmFiller.yml",
-            "sourceHash" : "25a1fed8627bf91bbe111d9180de0928d22dcc8bd96ac763d71a30e7bd83af26"
+            "sourceHash" : "f8b38f587ef248be202378f4d9a55046e6b5e12e6bb8e4b9dda635183435cebf"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

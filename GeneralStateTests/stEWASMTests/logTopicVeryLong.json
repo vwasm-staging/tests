@@ -2,10 +2,10 @@
     "logTopicVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/logTopicVeryLongFiller.yml",
-            "sourceHash" : "1b8c71fd383ad7a9149587374681c7f771d51b7d58672b3bced1044e4b352083"
+            "sourceHash" : "57d11d667d5d2d91f95612d59f6b7e246c729fbd6be3dddb446822fb179c61e8"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

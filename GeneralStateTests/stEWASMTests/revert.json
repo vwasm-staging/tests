@@ -2,10 +2,10 @@
     "revert" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/revertFiller.yml",
-            "sourceHash" : "d9a710788b352b117b95cceaea87e840d2470e3b589ba8f49f455e86ef12ddad"
+            "sourceHash" : "bd4897f1a6ad6a9091ada5da562dcec5a257689383f342fe44b3d90c0b60315c"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

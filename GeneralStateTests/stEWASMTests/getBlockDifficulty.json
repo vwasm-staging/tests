@@ -2,10 +2,10 @@
     "getBlockDifficulty" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getBlockDifficultyFiller.yml",
-            "sourceHash" : "8bf5357c9a298e19c077b1fcb13eba37958a00f65346ffc5c58cabec019a13db"
+            "sourceHash" : "093cab21c21db25ffbc82566c74389dddd2c3e0693fd8eb5abde3b87a1fdc2a5"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

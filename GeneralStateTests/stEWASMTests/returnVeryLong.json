@@ -2,10 +2,10 @@
     "returnVeryLong" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnVeryLongFiller.yml",
-            "sourceHash" : "d73ea985a828e92029abad3f698dfcb5dbd57a6d0d30caecac9348dc98e9bf5c"
+            "sourceHash" : "415d3e9e657b516dba3c1ca4e6d921febc43135198f9515de022a55746ed2a08"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

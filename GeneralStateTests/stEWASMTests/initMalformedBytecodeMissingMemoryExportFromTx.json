@@ -2,10 +2,10 @@
     "initMalformedBytecodeMissingMemoryExportFromTx" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.5.0-alpha.4",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeMissingMemoryExportFromTxFiller.yml",
-            "sourceHash" : "3f50d279d60b59b0cf59ed433e3e5a9f2ef8fbc614955ae6e9341abce6d772e2"
+            "sourceHash" : "24a3802dd41e50951d3838c8b2494062c1b9b99ab5943c5c6729a8c2830c0f82"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

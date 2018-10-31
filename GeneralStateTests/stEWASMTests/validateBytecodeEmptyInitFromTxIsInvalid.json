@@ -2,10 +2,10 @@
     "validateBytecodeEmptyInitFromTxIsInvalid" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.5.0-alpha.4",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeEmptyInitFromTxIsInvalidFiller.yml",
-            "sourceHash" : "0a971f4c720d27b3089e38571e6702d60d89ace44b1f30a9447a588e3fce6986"
+            "sourceHash" : "e7ecb3bba4f5e631ea040d5d74d0e859225b38ef68c0dd559af4af7cd1b07d2a"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

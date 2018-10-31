@@ -2,10 +2,10 @@
     "createFromTransactionReturnZeroBytes" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFromTransactionReturnZeroBytesFiller.yml",
-            "sourceHash" : "31e5670e5e5b491f0a1aeec0e829552e9a3a4514681eba5cfb16b9bd584d5b4b"
+            "sourceHash" : "ad828396e53217534d713f731a361fabd31c16210d33d99ec7a42688e2f0ce3c"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

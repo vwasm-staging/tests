@@ -2,10 +2,10 @@
     "initMalformedBytecodeInvalidMain" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.5.0-alpha.4",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeInvalidMainFiller.yml",
-            "sourceHash" : "03f70fd9b4b4d8eb9e2433cec197661ad3ba4cddcecd8c0279c21c1e3a39fa55"
+            "sourceHash" : "ac0cd681ef34897978b8237a7a882d3763464c5ce8f642f4466296ecfa1d2dcd"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

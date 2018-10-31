@@ -2,10 +2,10 @@
     "getExternalBalance" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/getExternalBalanceFiller.yml",
-            "sourceHash" : "39b8b560a7d41dbaceb83ea7a64aa4e0ad7481410fdc9e8a2cbab3ddd9e67f6d"
+            "sourceHash" : "e78476eaa782b2ea069b424312de37e64f17400629e34f516dd15245f2337401"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

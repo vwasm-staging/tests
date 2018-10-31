@@ -2,10 +2,10 @@
     "initMalformedBytecodeNoMain" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
-            "lllcversion" : "Version: 0.4.20-develop.2018.1.14+commit.0c20b6da.Darwin.appleclang",
+            "filledwith" : "testeth 1.5.0-alpha.4",
+            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeNoMainFiller.yml",
-            "sourceHash" : "b5e88f6c8d7a65aaa61081b2e34d3d1b87e1f0b8781fefe3e8a6d505d2e39a99"
+            "sourceHash" : "b20a1483f99e19386db614817e52b53e837e48f577ae46ac0a2c97b063d716cf"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

@@ -2,10 +2,10 @@
     "returnDataCopy" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.4.0",
+            "filledwith" : "testeth 1.5.0-alpha.4",
             "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/returnDataCopyFiller.yml",
-            "sourceHash" : "9bb0ff437e5e9edfca08399d3220ff32cd88a75a5a2e4580c572f1c6ab56cd0f"
+            "sourceHash" : "5fb43c563cb82e236e4b9dfc20e67cb143e4f40fdd22afafb1ab41b7067569ef"
         },
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
