@@ -90,7 +90,7 @@ callSenderBalanceExceeds128Bits:
         # Balances remain the same as because of:
         # InternalError: Account balance (or transaction value) exceeds 128 bits
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: 100000000000
+          balance: 99993000000
         deadbeef00000000000000000000000000000000:
           balance: 340282366920938463463374607431768211600
           storage: {
