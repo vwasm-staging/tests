@@ -151,14 +151,14 @@ callValueExceedsBalance:
           balance: '99999949300'
         deadbeef00000000000000000000000000000000:
           # no change in balance
-          balance: 0
+          balance: '0'
           storage: {
             # call should have failed
             1: '0x0100000000000000000000000000000000000000000000000000000000000000'
           }
         deadbeef00000000000000000000000000000001:
           # no change in balance
-          balance: 0
+          balance: '0'
           # no storage written
           storage: {
           }
