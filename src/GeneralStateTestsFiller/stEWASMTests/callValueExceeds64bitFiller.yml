@@ -9,13 +9,13 @@ callValueExceeds64bit:
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
   pre:
     a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-      balance: 100000000000
+      balance: '100000000000'
       code: ''
       nonce: '0x4'
       storage: {}
     deadbeef00000000000000000000000000000001:
       # This account receives the CALL value
-      balance: 0
+      balance: '0'
       nonce: ''
       storage: {}
       code: |
@@ -79,7 +79,7 @@ callValueExceeds64bit:
         )
     deadbeef00000000000000000000000000000000:
       # This account spends its entire balance on the call
-      balance: 0x10000000000000000
+      balance: '0x10000000000000000'
       nonce: ''
       storage: {}
       code: |
@@ -162,15 +162,15 @@ callValueExceeds64bit:
         - ALL
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: 99999956595
+          balance: '99999956595'
         deadbeef00000000000000000000000000000000:
-          balance: 0
+          balance: '0'
           storage: {
           }
         deadbeef00000000000000000000000000000001:
           storage: {
           }
-          balance: 0x10000000000000000
+          balance: '0x10000000000000000'
   transaction:
     data:
     - '0x'
