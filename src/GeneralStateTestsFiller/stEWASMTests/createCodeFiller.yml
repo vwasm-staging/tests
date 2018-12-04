@@ -133,7 +133,7 @@ createCode:
             1: '0xf2048c36a5536fea3bc71d49ed59f2c65c546eea000000000000000000000000',
           }
         # Newly-created contract
-        0xf2048c36a5536fea3bc71d49ed59f2c65c546eea:
+        f2048c36a5536fea3bc71d49ed59f2c65c546eea:
           code: '0xbeef'
           storage: {
           }
