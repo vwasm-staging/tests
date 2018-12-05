@@ -27,7 +27,7 @@ validateBytecodeMissingVersionTwoBytesFromTxIsInvalid:
         # newly-created contract
         # expect code to be empty since create should fail
         6295ee1b4f6dd65047762f924ecd367c17eabf8f:
-          shouldnotexist: 1
+          shouldnotexist: '1'
   transaction:
     data: [
       # Wasm magic (0061736d) with only two bytes for version number
