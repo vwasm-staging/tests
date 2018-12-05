@@ -12,7 +12,7 @@ initMalformedBytecodeHasStartFromTx:
     a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
       balance: '100000000000'
       code: ''
-      nonce: ''
+      nonce: '0'
       storage: {}
   expect:
     - indexes:
@@ -27,7 +27,7 @@ initMalformedBytecodeHasStartFromTx:
         # newly-created contract
         # expect code to be empty since create should fail
         6295ee1b4f6dd65047762f924ecd367c17eabf8f:
-          shouldnotexist: 1
+          shouldnotexist: '1'
   transaction:
     data: 
     - |
