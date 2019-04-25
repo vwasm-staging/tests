@@ -2,7 +2,7 @@
 
 Current [ewasm test cases][1] are based on the main [Ethereum test cases][2]
 which are used by all clients. This allows us to run ewasm tests using
-cpp-ethereum/testeth.
+aleth/testeth.
 
 In the main directory of the ewasm tests repository, we can see different kind
 of tests, for example: ABITests, BasicTests, BlockchainTests, GeneralStateTests,
@@ -297,7 +297,7 @@ Filling the test is the process to take the source Filler files and generate
 json files. The final json file contains the result of the execution as a
 post state hash.
 
-In order to "fill the tests" we need cpp-ethereum/testeth built with hera.
+In order to "fill the tests" we need aleth/testeth and hera as a shared library.
 
 Testeth also needs `lllc` (LLL Compiler) in order to fill tests cases (even if
 we are not using LLL code in our tests), `lllc` compiler is distributed along
@@ -308,69 +308,70 @@ json file to your commit.
 
 You can find more information about creating and filling tests in the [testeth documentation][17].
 
-### building cpp-ethereum with hera
+### building aleth/testeth
 
-For building cpp ethereum you can use the commit specified in the [hera circleci file][12]
+For building aleth you can use the commit/branch specified in the [hera circleci file][12]
 
-For example, current commit used in hera circle ci is
-`b387b5713738da12444af8d3a0f6390f2c87b76e`, in order to build cpp-ethereum with
-hera we follow the following steps:
+For example, current branch used in hera circle ci is `v1.5.1`, in order to
+build aleth we follow the following steps:
 
-- clone cpp-ethereum
-
-```
-git clone https://github.com/ethereum/cpp-ethereum.git
-```
-
-- go to the specific commit
+- clone aleth (only needed branch)
 
 ```
-cd cpp-ethereum/
-git reset --hard b387b5713738da12444af8d3a0f6390f2c87b76e
+git clone https://github.com/ethereum/aleth.git --single-branch --branch v1.5.1
 ```
 
 - update submodules
 
 ```
+cd aleth/
 git submodule update --init --recursive
 ```
 
-- If you want to  test a specific hera version, you have to go to the hera
-  subdirectory, checkout a specific commit or branch and update submodules.
-  
-```
-cd hera
-# update hera to a specific version
-git submodule update --init
-```
-
-- build hera as a shared library, you can add the `-DHERA_DEBUGGING=ON` flag if
-  you want to use the debug methods in your wast code:
-
-```
-cd hera
-cmake -DHERA_DEBUGGING=ON -DBUILD_SHARED_LIBS=ON ..
-make -j4
-```
-
-Library `libhera.so` is created in the `src/` subdirectory.
-
-Building hera as a shared library allows us to load the library dynamically when
-running testeth, this way when you do any change in hera or get a new hera
-version you only need to rebuild the hera library again instead of cpp-ethereum.
-
-- build cpp-ethereum: create a `build` directory inside
-`cpp-ethereum/` and run cmake and make:
+- build aleth
 
 ```
 mkdir build
 cd build
-cmake .. && make -j4
+cmake ..
+make -j4
 ```
+
+### building hera
+
+Clone latest hera [release][18], for example, at the moment of writing this
+document, latest Hera release is `0.2.2`.
+
+```
+git clone https://github.com/ewasm/hera.git --single-branch --branch v0.2.2
+```
+
+- update submodules
+
+```
+cd hera
+git submodule update --init
+```
+
+- build hera as a shared library. additionally you can add the flag `-DHERA_DEBUGGING=ON` flag if
+  you want to make use of the debugging methods:
+
+```
+mkdir build
+cd build
+cmake -DHERA_DEBUGGING=ON -DBUILD_SHARED_LIBS=ON ..
+make -j4
+```
+
+Library `libhera.so` is created in the `build/src/` subdirectory.
+
+Building hera as a shared library allows us to load the library dynamically when
+running testeth, this way when you do any change in hera or get a new hera
+version you only need to rebuild the hera library again instead of aleth + hera.
 
 ### Filling the tests
 
-When cpp-ethereum is built, it has testeth in `cpp-ethereum/build/test`
+When aleth is built, it has testeth in the `aleth/build/test/` directory.
 
 
 You can fill the test using the following command:
@@ -391,7 +392,8 @@ and fill our tests
 - `--singlenet "Byzantium"` - Indicates we want to run Byzantium tests, ewasm is
   Byzantium only
 - `--singletest mytest` - Where `mytest` is the name of the test you want to
-  fill and execute, you only have to provide the test name (without the `Filler` ending)
+  fill and execute, you only have to provide the test name (without the `Filler`
+  ending), if you want to execute all tests avoid passing this flag.
   
 Optionally you can include the flag `--jsontrace ''`, this will allow to print a
 trace with information that may be helpful when reviewing the behavior of a test
@@ -406,9 +408,10 @@ case, for example: used gas, storage, executing opcode, etc.
 [9]: https://github.com/ewasm/tests/blob/0130c54bbd73db97f0fae2fcd7b795571efc966f/src/GeneralStateTestsFiller/stEWASMTests/callFiller.yml#L1
 [10]: https://github.com/ewasm/tests/blob/0130c54bbd73db97f0fae2fcd7b795571efc966f/src/GeneralStateTestsFiller/stEWASMTests/callFiller.yml#L86
 [11]: https://github.com/ewasm/design/blob/master/eth_interface.md
-[12]: https://github.com/ewasm/hera/blob/5eb92df16b49b673852ad8b6d4b0f469a13d3a23/circle.yml#L70
+[12]: https://github.com/ewasm/hera/blob/master/circle.yml#L87
 [13]: https://github.com/ethereum/solidity
 [14]: https://github.com/ewasm/hera#debugging-module
 [15]: https://github.com/ewasm/tests/tree/ewasm-readme/src/
 [16]: https://webassembly.github.io/spec/core/text/modules.html
 [17]: https://github.com/ethereum/testeth/blob/64c78ffbcf082d116db10906b8f1e9c6204084c1/doc/generating_tests.rst
+[18]: https://github.com/ewasm/hera/releases
