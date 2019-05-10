@@ -1,0 +1,92 @@
+# test log with log with 5 topics (expect OOG)
+logInvalidNumTopics:
+  env:
+    currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
+    currentDifficulty: '0x020000'
+    currentGasLimit: '89128960'
+    currentNumber: '1'
+    currentTimestamp: '1000'
+    previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
+  pre:
+    # tx sender
+    a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+      balance: '100000000000'
+      code: ''
+      nonce: ''
+      storage: {}
+    # called contract, very simple, just calls log
+    deadbeef00000000000000000000000000000000:
+      balance: '100000000000'
+      code: |
+        (module
+          (import "ethereum" "log" (func $log (param i32 i32 i32 i32 i32 i32 i32)))
+          (import "ethereum" "storageStore" (func $storageStore (param i32 i32)))
+          (memory 1)
+          (data (i32.const 0) "\de\ad\be\e0")
+          (data (i32.const 4) "\de\ad\be\e1")
+          (data (i32.const 8) "\de\ad\be\e2")
+          (data (i32.const 12) "\de\ad\be\e3")
+          (data (i32.const 16) "\de\ad\be\e4")
+          (data (i32.const 20) "\de\ad\be\e5")
+          (data (i32.const 24) "\de\ad\be\e6")
+          (data (i32.const 128) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+          (data (i32.const 160) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\ff")
+          (export "memory" (memory 0))
+          (export "main" (func $main))
+          (func $main
+            (local $storageKeyOffset i32)
+            (local $storageValueOffset i32)
+
+            (set_local $storageKeyOffset (i32.const 128))
+            (set_local $storageValueOffset (i32.const 160))
+
+            (call $log
+              ;; dataOffset i32ptr the memory offset to load data from (bytes)
+              (i32.const 0)
+              ;; length i32 the data length
+              (i32.const 0x000000ff)
+              ;; numberOfTopics i32 the number of topics following (0 to 4)
+              (i32.const 5)
+              ;; topic1 i32ptr the memory offset to load topic1 from (u256)
+              (i32.const 8)
+              ;; topic2 i32ptr the memory offset to load topic2 from (u256)
+              (i32.const 12)
+              ;; topic3 i32ptr the memory offset to load topic3 from (u256)
+              (i32.const 16)
+              ;; topic4 i32ptr the memory offset to load topic4 from (u256)
+              (i32.const 20)
+            )
+
+            ;; Store a value to storage, value should not be set because the log above will trap
+            (call $storageStore (get_local $storageKeyOffset) (get_local $storageValueOffset))
+          )
+        )
+      nonce: ''
+      storage: {}
+  expect:
+    - indexes:
+        data: !!int -1
+        gas: !!int -1
+        value: !!int -1
+      network:
+        - ALL
+      result:
+        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
+          # start_gas    - gas_limit * gas_price
+          # 100000000000 - 0x5000001 * 1
+          balance: '99916113919'
+        deadbeef00000000000000000000000000000000:
+          storage: {
+            0: '0x0000000000000000000000000000000000000000000000000000000000000000',
+          }
+  transaction:
+    data: 
+    - ''
+    gasLimit:
+    - '0x5000001'
+    gasPrice: '0x01'
+    nonce: '0x00'
+    secretKey: 45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8
+    to: 'deadbeef00000000000000000000000000000000'
+    value:
+    - '0'
