@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filledwith" : "testeth 1.6.0",
-            "lllcversion" : "Version: 0.5.0+commit.1d4f565a.Linux.clang",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/logZeroTopicsFiller.yml",
             "sourceHash" : "7aae502b09d196a7564bd3d0b055579424ea9b007f62305d00aa1926f996dbe9"
         },

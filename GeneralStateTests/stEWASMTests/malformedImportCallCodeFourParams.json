@@ -2,8 +2,8 @@
     "malformedImportCallCodeFourParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6-1+commit.19ad7d95",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportCallCodeFourParamsFiller.yml",
             "sourceHash" : "987d2942fc7ddfe629a49175714406a5eb1609846d96d929f6ba387160c3c127"
         },

@@ -2,8 +2,8 @@
     "malformedImportGetBlockGasLimitOneParam" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetBlockGasLimitOneParamFiller.yml",
             "sourceHash" : "83579679c35d649d24a58186b66b57463aa5a843c3a763209a8cb9e9f2b33a04"
         },

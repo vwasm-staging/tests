@@ -2,8 +2,8 @@
     "malformedImportCallZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6-1+commit.19ad7d95",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportCallZeroParamsFiller.yml",
             "sourceHash" : "fbc9d327dcd05e4087dda48045d56156f1a432e77a93dfe2e5325312c20ce430"
         },

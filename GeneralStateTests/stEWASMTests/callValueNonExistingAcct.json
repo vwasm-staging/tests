@@ -2,8 +2,8 @@
     "callValueNonExistingAcct" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/callValueNonExistingAcctFiller.yml",
             "sourceHash" : "1fd5429f326f169862b76cdc4c314903a5492700ad4d848646de7566399e1e90"
         },

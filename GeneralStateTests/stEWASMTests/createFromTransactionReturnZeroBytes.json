@@ -2,8 +2,8 @@
     "createFromTransactionReturnZeroBytes" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createFromTransactionReturnZeroBytesFiller.yml",
             "sourceHash" : "ad828396e53217534d713f731a361fabd31c16210d33d99ec7a42688e2f0ce3c"
         },

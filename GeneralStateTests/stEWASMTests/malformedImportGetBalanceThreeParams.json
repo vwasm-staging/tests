@@ -2,8 +2,8 @@
     "malformedImportGetBalanceThreeParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetBalanceThreeParamsFiller.yml",
             "sourceHash" : "9d65a5c58b1496d0cf0c5647db78cb3c94cd2116019c6813a76e0aa8ac6f8f5e"
         },

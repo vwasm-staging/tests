@@ -2,8 +2,8 @@
     "malformedImportReturnDataCopyFourParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportReturnDataCopyFourParamsFiller.yml",
             "sourceHash" : "2f25a5b949df8f2e4a2956f66ee5c82d759ab55288c260ef100fb8b95c9681b4"
         },

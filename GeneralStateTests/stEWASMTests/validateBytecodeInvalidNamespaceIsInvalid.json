@@ -2,8 +2,8 @@
     "validateBytecodeInvalidNamespaceIsInvalid" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/validateBytecodeInvalidNamespaceIsInvalidFiller.yml",
             "sourceHash" : "b6269ee12d58819f13f5a88e7f360e72be8e5b87b96154545cd593de1131c0f3"
         },

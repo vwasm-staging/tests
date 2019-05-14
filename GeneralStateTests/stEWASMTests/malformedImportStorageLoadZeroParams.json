@@ -2,8 +2,8 @@
     "malformedImportStorageLoadZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportStorageLoadZeroParamsFiller.yml",
             "sourceHash" : "e3ff6da9c64fd740fdbc2f06ac3aec46ff5f89b0341158a9595ec57f6e27a00a"
         },

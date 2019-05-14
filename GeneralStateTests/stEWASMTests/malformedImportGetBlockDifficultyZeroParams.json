@@ -2,8 +2,8 @@
     "malformedImportGetBlockDifficultyZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetBlockDifficultyZeroParamsFiller.yml",
             "sourceHash" : "df708c547886dd2371dd0c10cd0d403fc419f18a7bd0b4ca0eb450861306eb34"
         },

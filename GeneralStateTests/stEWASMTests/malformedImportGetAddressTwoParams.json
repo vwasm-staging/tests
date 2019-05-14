@@ -2,8 +2,8 @@
     "malformedImportGetAddressTwoParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetAddressTwoParamsFiller.yml",
             "sourceHash" : "51713f0748a20d14301394b70761e52110138e0002f19ea325d8583502dbfd82"
         },
