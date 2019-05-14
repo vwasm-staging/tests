@@ -2,8 +2,8 @@
     "selfDestructNonExistingAcct" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/selfDestructNonExistingAcctFiller.yml",
             "sourceHash" : "48bca63c744cb8abb4e679a18f7f5ac0bf65b560d1f3bf80abd42a694bbae959"
         },

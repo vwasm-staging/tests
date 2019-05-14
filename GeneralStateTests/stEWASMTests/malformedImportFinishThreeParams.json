@@ -2,8 +2,8 @@
     "malformedImportFinishThreeParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportFinishThreeParamsFiller.yml",
             "sourceHash" : "f398e0ad9715b5aeff495d610ce4d5a149c087dc283fdaaeb5e74f2d160a88ff"
         },

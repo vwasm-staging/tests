@@ -2,8 +2,8 @@
     "initMalformedBytecodeInvalidMain" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/initMalformedBytecodeInvalidMainFiller.yml",
             "sourceHash" : "ac0cd681ef34897978b8237a7a882d3763464c5ce8f642f4466296ecfa1d2dcd"
         },

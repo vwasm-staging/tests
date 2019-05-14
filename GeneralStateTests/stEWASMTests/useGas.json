@@ -2,8 +2,8 @@
     "useGas" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/useGasFiller.yml",
             "sourceHash" : "0a762786b0f142b99db4a6697e7aee25cc5ccd4e9efe341df65f1c041bbc6419"
         },

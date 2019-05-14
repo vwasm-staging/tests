@@ -2,8 +2,8 @@
     "malformedImportCreateFiveParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportCreateFiveParamsFiller.yml",
             "sourceHash" : "53832c1b5756c7797567bcec7608d792d2ef062a3f506d0bd11366445c28b74f"
         },

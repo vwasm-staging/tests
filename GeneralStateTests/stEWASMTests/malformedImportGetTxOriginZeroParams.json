@@ -2,8 +2,8 @@
     "malformedImportGetTxOriginZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetTxOriginZeroParamsFiller.yml",
             "sourceHash" : "1d43243c03f17aac8f4743e2ddd2a3d83f98483945e8b9c72bc4f8650ff802d3"
         },

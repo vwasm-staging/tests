@@ -2,8 +2,8 @@
     "malformedImportGetBalanceZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetBalanceZeroParamsFiller.yml",
             "sourceHash" : "c8a8b4342e561867b4b263a23c5f50d779e34f56877ce6bf7cd841bdd880b85b"
         },

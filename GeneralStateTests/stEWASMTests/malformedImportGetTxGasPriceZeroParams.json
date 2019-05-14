@@ -2,8 +2,8 @@
     "malformedImportGetTxGasPriceZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetTxGasPriceZeroParamsFiller.yml",
             "sourceHash" : "1203ac0f1a9930b2005599cf4921fcd0c8340fe277b8e7d7cfdbe0583587eae6"
         },

@@ -2,8 +2,8 @@
     "malformedImportGetAddressZeroParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetAddressZeroParamsFiller.yml",
             "sourceHash" : "6bd33f1445b08c78b7e0dd44f9c7994ee51dd4467bde6bcab186d5867e9f13cc"
         },

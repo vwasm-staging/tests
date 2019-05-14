@@ -2,8 +2,8 @@
     "revert" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.4",
-            "lllcversion" : "Version: 0.4.20-develop.2017.12.3+commit.4cad0b22.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/revertFiller.yml",
             "sourceHash" : "bd4897f1a6ad6a9091ada5da562dcec5a257689383f342fe44b3d90c0b60315c"
         },

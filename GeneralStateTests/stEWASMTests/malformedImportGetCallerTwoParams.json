@@ -2,8 +2,8 @@
     "malformedImportGetCallerTwoParams" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/malformedImportGetCallerTwoParamsFiller.yml",
             "sourceHash" : "15eb6e647ab6455f888ef91832fd29a37b5b74432d6c8d9ef916fb2ebc238fbf"
         },

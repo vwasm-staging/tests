@@ -2,8 +2,8 @@
     "createValue" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createValueFiller.yml",
             "sourceHash" : "c12142821c200e2779979ede16913ce3f8a90b849c9a2ee57e53c4b224a00514"
         },

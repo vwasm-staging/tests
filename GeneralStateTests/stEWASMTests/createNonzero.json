@@ -2,8 +2,8 @@
     "createNonzero" : {
         "_info" : {
             "comment" : "",
-            "filledwith" : "testeth 1.5.0-alpha.6",
-            "lllcversion" : "Version: 0.5.0-develop.2018.11.8+commit.20481055.Linux.g++",
+            "filledwith" : "testeth 1.6.0",
+            "lllcversion" : "Version: 0.5.9-develop.2019.5.10+commit.4de75b24.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEWASMTests/createNonzeroFiller.yml",
             "sourceHash" : "eee4bc94fea3aee895e20806c235530575b6d5650d951c01a030788abb4b9340"
         },
