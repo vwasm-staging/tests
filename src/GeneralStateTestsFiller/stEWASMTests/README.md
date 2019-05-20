@@ -301,7 +301,9 @@ In order to "fill the tests" we need aleth/testeth and hera as a shared library.
 
 Testeth also needs `lllc` (LLL Compiler) in order to fill tests cases (even if
 we are not using LLL code in our tests), `lllc` compiler is distributed along
-with [solidity][13], you may need to compile solidity/lllc and add it to your `$PATH`.
+with [solidity][13], you may need to compile solidity/lllc and add it to your
+`$PATH`, `lllc` is no longer compiled by default, you must add the flag
+`-DLLL=ON` when executing `cmake`.
 
 When you create a new test or change an existing one, it is important to add the "filled" 
 json file to your commit.
@@ -312,13 +314,13 @@ You can find more information about creating and filling tests in the [testeth d
 
 For building aleth you can use the commit/branch specified in the [hera circleci file][12]
 
-For example, current branch used in hera circle ci is `v1.5.1`, in order to
+For example, current branch used in hera circle ci is `v1.6.0`, in order to
 build aleth we follow the following steps:
 
 - clone aleth (only needed branch)
 
 ```
-git clone https://github.com/ethereum/aleth.git --single-branch --branch v1.5.1
+git clone https://github.com/ethereum/aleth.git --single-branch --branch v1.6.0
 ```
 
 - update submodules
@@ -340,10 +342,10 @@ make -j4
 ### building hera
 
 Clone latest hera [release][18], for example, at the moment of writing this
-document, latest Hera release is `0.2.2`.
+document, latest Hera release is `0.2.3`.
 
 ```
-git clone https://github.com/ewasm/hera.git --single-branch --branch v0.2.2
+git clone https://github.com/ewasm/hera.git --single-branch --branch v0.2.3
 ```
 
 - update submodules
