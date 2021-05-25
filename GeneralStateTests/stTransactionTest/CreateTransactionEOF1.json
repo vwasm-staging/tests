@@ -2,7 +2,7 @@
     "CreateTransactionEOF1" : {
         "_info" : {
             "comment" : "",
-            "filling-rpc-server" : "evm version 1.10.4-unstable-1d6a2a84-20210519",
+            "filling-rpc-server" : "evm version 1.10.4-unstable-838cc344-20210520",
             "filling-tool-version" : "retesteth-0.1.1-eip1559+commit.5ad217c6.Linux.g++",
             "lllcversion" : "Version: 0.5.14-develop.2021.4.29+commit.14c9d5de.Linux.clang",
             "source" : "src/GeneralStateTestsFiller/stTransactionTest/CreateTransactionEOF1Filler.yml",
